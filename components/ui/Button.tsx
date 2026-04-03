@@ -1,0 +1,70 @@
+import { type ButtonHTMLAttributes, forwardRef } from "react";
+
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?: "primary" | "secondary" | "ghost" | "glass";
+  size?: "sm" | "md" | "lg";
+  href?: string;
+  external?: boolean;
+}
+
+const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+  (
+    {
+      className = "",
+      variant = "primary",
+      size = "md",
+      href,
+      external,
+      children,
+      ...props
+    },
+    ref
+  ) => {
+    const baseStyles =
+      "inline-flex items-center justify-center gap-2 font-medium transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:opacity-50 disabled:pointer-events-none";
+
+    const variants = {
+      primary:
+        "bg-text-primary text-background hover:bg-text-secondary glow-hover rounded-full border border-transparent",
+      secondary:
+        "bg-transparent text-text-primary border border-border hover:border-text-muted glow-hover rounded-full",
+      ghost:
+        "bg-transparent text-text-secondary hover:text-text-primary hover:bg-surface rounded-lg",
+      glass:
+        "glass text-text-primary hover:bg-surface-elevated/60 rounded-full glow-hover",
+    };
+
+    const sizes = {
+      sm: "px-4 py-2 text-sm",
+      md: "px-6 py-2.5 text-sm",
+      lg: "px-8 py-3 text-base",
+    };
+
+    const combinedClassName = `${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`;
+
+    if (href) {
+      return (
+        <a
+          href={href}
+          className={combinedClassName}
+          {...(external
+            ? { target: "_blank", rel: "noopener noreferrer" }
+            : {})}
+        >
+          {children}
+        </a>
+      );
+    }
+
+    return (
+      <button ref={ref} className={combinedClassName} {...props}>
+        {children}
+      </button>
+    );
+  }
+);
+
+Button.displayName = "Button";
+
+export { Button };
+export type { ButtonProps };

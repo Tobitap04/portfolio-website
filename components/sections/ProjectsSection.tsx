@@ -1,0 +1,80 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { projects } from "@/data/projects";
+import { ProjectCard } from "@/components/ui/ProjectCard";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { Button } from "@/components/ui/Button";
+
+export function ProjectsSection() {
+  const featuredProjects = projects.filter((p) => p.featured);
+  const upcomingProjects = projects.filter(
+    (p) => p.status === "in-progress" || p.status === "planned"
+  );
+
+  return (
+    <section id="projects" className="py-24 md:py-32">
+      <div className="max-w-6xl mx-auto px-6">
+        <SectionHeading
+          badge="Featured Projects"
+          title="Selected Work"
+          subtitle="A collection of projects that showcase my skills across different technologies and problem domains."
+        />
+
+        {/* Featured project grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {featuredProjects.map((project, index) => (
+            <motion.div
+              key={project.id}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              <ProjectCard project={project} />
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Upcoming projects */}
+        {upcomingProjects.length > 0 && (
+          <div className="mt-20">
+            <h3 className="text-xl font-semibold text-text-primary mb-8 flex items-center gap-3">
+              <span className="h-px flex-1 max-w-[60px] bg-border" />
+              Upcoming Ideas
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {upcomingProjects.map((project, index) => (
+                <motion.div
+                  key={project.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-60px" }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                >
+                  <ProjectCard project={project} />
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Bottom actions */}
+        <motion.div
+          className="mt-16 flex flex-wrap items-center justify-center gap-4"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <Button variant="secondary" href="https://github.com/tobiastappe" external>
+            All Projects on GitHub
+          </Button>
+          <Button variant="ghost" href="#contact">
+            Get in Touch
+          </Button>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
