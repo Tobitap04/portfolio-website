@@ -37,7 +37,7 @@ export function ContactSection() {
         </motion.h2>
 
         <motion.div
-          className="mt-10"
+          className="mt-10 flex flex-wrap items-center justify-center gap-4"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -46,9 +46,16 @@ export function ContactSection() {
           <Button
             variant="primary"
             size="lg"
-            href="mailto:tobias@example.com"
+            href="mailto:ttappe@gmx.net"
           >
-            Get in Touch
+            Email Me
+          </Button>
+          <Button
+            variant="secondary"
+            size="lg"
+            href="tel:017676650275"
+          >
+            Call Me
           </Button>
         </motion.div>
 

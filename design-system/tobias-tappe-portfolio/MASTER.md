@@ -7,8 +7,8 @@
 ---
 
 **Project:** Tobias Tappe Portfolio
-**Generated:** 2026-04-03 15:18:08
-**Category:** Quantum Computing Interface
+**Generated:** 2026-04-06 17:28:33
+**Category:** Developer Tool / IDE
 
 ---
 
@@ -28,14 +28,14 @@
 
 ### Typography
 
-- **Heading Font:** Exo
-- **Body Font:** Roboto Mono
-- **Mood:** science, technology, research, data, futuristic, precise
-- **Google Fonts:** [Exo + Roboto Mono](https://fonts.google.com/share?selection.family=Exo:wght@300;400;500;600;700|Roboto+Mono:wght@300;400;500;700)
+- **Heading Font:** Archivo
+- **Body Font:** Space Grotesk
+- **Mood:** minimal, portfolio, designer, creative, clean, artistic
+- **Google Fonts:** [Archivo + Space Grotesk](https://fonts.google.com/share?selection.family=Archivo:wght@300;400;500;600;700|Space+Grotesk:wght@300;400;500;600;700)
 
 **CSS Import:**
 ```css
-@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 ```
 
 ### Spacing Variables
@@ -173,8 +173,8 @@
 
 ## Anti-Patterns (Do NOT Use)
 
-- ❌ Generic tech design
-- ❌ No viz
+- ❌ Light mode default
+- ❌ Slow performance
 
 ### Additional Forbidden Patterns
 

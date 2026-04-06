@@ -9,12 +9,13 @@ import { ExperienceItem } from "@/components/ui/ExperienceItem";
 import { Button } from "@/components/ui/Button";
 
 const aboutSkills = [
-  "Full-Stack Development",
-  "UI/UX Design",
-  "React / Next.js",
-  "TypeScript",
-  "Python",
-  "Machine Learning",
+  "Software Engineering",
+  "React & Next.js",
+  "Python & Azure DevOps",
+  "Agentic Workflow (n8n)",
+  "AI Prompt Engineering",
+  "RAG & MCP Servers",
+  "Claude, Gemini & Antigravity",
 ];
 
 export function AboutSection() {
@@ -86,11 +87,13 @@ export function AboutSection() {
             {/* Bio */}
             <div className="bg-surface border border-border rounded-2xl p-6">
               <p className="text-text-secondary leading-relaxed">
-                I&apos;m Tobias Tappe, a dedicated Computer Science student and
-                Software Developer based in Germany. I specialize in building
-                modern web applications with a focus on clean architecture,
-                intuitive user experiences, and scalable solutions. My passion
-                lies in crafting digital products that solve real problems.
+                I&apos;m Tobias Tappe, an M.Sc. Computer Science student at
+                Paderborn University and a passionate Software Developer. While I maintain
+                a rock-solid foundation in traditional software architecture, data structures, 
+                and full-stack web development, my true edge lies in leveraging
+                advanced AI to iterate at unprecedented speeds. I regularly collaborate with
+                agentic AI tools like Claude, Gemini, Google Antigravity, and Stitch to 
+                prototype, test, and deploy complex applications rapidly.
               </p>
 
               {/* Skill tags */}

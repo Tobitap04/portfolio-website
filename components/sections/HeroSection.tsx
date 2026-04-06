@@ -20,7 +20,7 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <StatusBadge text="Computer Science Student" />
+          <StatusBadge text="Software Engineer & AI Specialist" />
         </motion.div>
 
         <motion.h1
@@ -39,8 +39,8 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          Building modern web experiences with a focus on clean architecture,
-          intuitive design, and scalable solutions.
+          Engineering modern, scalable web applications with a foundation in robust
+          software architecture, supercharged by cutting-edge Agentic AI workflows.
         </motion.p>
 
         <motion.div

@@ -21,17 +21,17 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     ref
   ) => {
     const baseStyles =
-      "inline-flex items-center justify-center gap-2 font-medium transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:opacity-50 disabled:pointer-events-none";
+      "inline-flex items-center justify-center gap-2 font-medium transition-[color,background-color,border-color,box-shadow,transform,opacity] duration-150 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:opacity-50 disabled:pointer-events-none";
 
     const variants = {
       primary:
-        "bg-text-primary text-background hover:bg-text-secondary glow-hover rounded-full border border-transparent",
+        "bg-cta text-foreground hover:bg-cta-hover hover:-translate-y-[1px] glow-hover rounded-lg border border-transparent shadow-md",
       secondary:
-        "bg-transparent text-text-primary border border-border hover:border-text-muted glow-hover rounded-full",
+        "bg-transparent text-primary border-2 border-primary hover:border-accent hover:text-accent hover:-translate-y-[1px] glow-hover rounded-lg shadow-sm",
       ghost:
         "bg-transparent text-text-secondary hover:text-text-primary hover:bg-surface rounded-lg",
       glass:
-        "glass text-text-primary hover:bg-surface-elevated/60 rounded-full glow-hover",
+        "glass text-text-primary hover:bg-surface-elevated/60 rounded-lg glow-hover hover:-translate-y-[1px]",
     };
 
     const sizes = {

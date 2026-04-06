@@ -43,7 +43,7 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-[background-color,border-color,backdrop-filter] duration-200 ${
         scrolled
           ? "glass border-b border-border/50"
           : "bg-transparent"
@@ -64,7 +64,7 @@ export function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className={`px-4 py-2 text-sm rounded-full transition-all duration-200 cursor-pointer ${
+              className={`px-4 py-2 text-sm rounded-full transition-colors duration-150 cursor-pointer ${
                 activeSection === link.href
                   ? "text-text-primary bg-surface"
                   : "text-text-secondary hover:text-text-primary"
@@ -93,7 +93,7 @@ export function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className={`px-4 py-3 text-sm rounded-lg transition-all duration-200 ${
+                className={`px-4 py-3 text-sm rounded-lg transition-colors duration-150 ${
                   activeSection === link.href
                     ? "text-text-primary bg-surface"
                     : "text-text-secondary hover:text-text-primary hover:bg-surface/50"

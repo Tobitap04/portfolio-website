@@ -14,9 +14,9 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
   return (
     <div
-      className={`group relative rounded-xl overflow-hidden border transition-all duration-300 ${
+      className={`group relative rounded-xl overflow-hidden border transition-[border-color,box-shadow,transform] duration-150 ${
         isCompleted
-          ? "border-border hover:border-text-muted bg-surface"
+          ? "border-border hover:border-white/10 hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-primary/5 hover:-translate-y-1 bg-surface cursor-pointer"
           : "border-border-subtle bg-surface/50 opacity-70"
       }`}
     >
@@ -27,7 +27,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             isCompleted
               ? "group-hover:from-background/20 group-hover:via-background/40 group-hover:to-background/80"
               : ""
-          } transition-all duration-500`}
+          } transition-[background] duration-200`}
         />
 
         {/* Project image */}
@@ -35,7 +35,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           src={project.image}
           alt={project.title}
           fill
-          className={`object-cover transition-all duration-500 ${
+          className={`object-cover transition-[filter,transform] duration-200 ${
             isCompleted
               ? "grayscale group-hover:grayscale-0 group-hover:scale-105"
               : "grayscale opacity-50"
@@ -45,7 +45,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
         {/* Glassmorphic overlay button on hover */}
         {isCompleted && (project.githubUrl || project.liveUrl) && (
-          <div className="absolute inset-0 flex items-end justify-center pb-6 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div className="absolute inset-0 flex items-end justify-center pb-6 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
             <a
               href={project.liveUrl || project.githubUrl}
               target="_blank"

@@ -12,68 +12,34 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "portfolio-website",
-    title: "Portfolio Website",
+    id: "llm-robustness-framework",
+    title: "LLM Robustness Framework",
     description:
-      "A modern, dark-mode portfolio built with Next.js, TypeScript, and Tailwind CSS. Features animated backgrounds, responsive design, and optimized performance.",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    image: "/images/projects/portfolio.jpg",
-    githubUrl: "https://github.com/tobiastappe",
-    liveUrl: "#",
+      "A comprehensive framework evaluating the robustness of Large Language Models when answering causal questions. Developed as my Bachelor's thesis, it systematically analyzes different prompting strategies and assesses the stability and reliability of model responses under varying conditions.",
+    tags: ["LLM", "Python", "Machine Learning", "Research"],
+    image: "/images/projects/portfolio.jpg", // Placeholder
+    githubUrl: "https://github.com/tobiastappe", // Add actual URL later
     status: "completed",
     featured: true,
   },
   {
-    id: "ai-chatbot",
-    title: "AI Study Assistant",
+    id: "coaching-website",
+    title: "Katharina Tappe Coaching",
     description:
-      "An intelligent chatbot powered by LLMs that helps students organize study materials, generate flashcards, and quiz themselves on course content.",
-    tags: ["Python", "LangChain", "React", "OpenAI API"],
-    image: "/images/projects/ai-chatbot.jpg",
-    githubUrl: "https://github.com/tobiastappe",
+      "Designed and developed a professional portfolio and booking website for a learning therapist. Rapidly prototyped high-fidelity UI using Google's Stitch and implemented the full custom Next.js frontend via an iterative agentic coding loop with Claude, Gemini, and Google Antigravity.",
+    tags: ["React", "Next.js", "Web Development", "UI/UX"],
+    image: "/images/projects/portfolio.jpg", // Placeholder
     status: "completed",
     featured: true,
   },
   {
-    id: "task-manager",
-    title: "Task Flow",
+    id: "telegram-ai-assistant",
+    title: "Telegram AI Assistant",
     description:
-      "A full-stack task management app with real-time collaboration, drag-and-drop kanban boards, and team workspace features.",
-    tags: ["React", "Node.js", "PostgreSQL", "WebSockets"],
-    image: "/images/projects/task-manager.jpg",
-    githubUrl: "https://github.com/tobiastappe",
+      "An automated workflow assistant built with n8n for Telegram. It enables voice message summarization, automatic generation of Anki flashcards from notes and PDFs, and uses OCR/Vision to parse photos of timetables directly into calendar events.",
+    tags: ["n8n", "Automation", "API Integration", "AI", "Python"],
+    image: "/images/projects/ai-chatbot.jpg", // Placeholder
     status: "completed",
     featured: true,
-  },
-  {
-    id: "data-viz-dashboard",
-    title: "Data Viz Dashboard",
-    description:
-      "Interactive data visualization dashboard for analyzing large datasets with customizable charts, filters, and export capabilities.",
-    tags: ["D3.js", "TypeScript", "Python", "FastAPI"],
-    image: "/images/projects/data-viz.jpg",
-    githubUrl: "https://github.com/tobiastappe",
-    status: "completed",
-    featured: true,
-  },
-  {
-    id: "mobile-fitness",
-    title: "FitTrack Mobile",
-    description:
-      "A cross-platform fitness tracking app with workout logging, progress analytics, and personalized training recommendations.",
-    tags: ["React Native", "TypeScript", "Firebase"],
-    image: "/images/projects/fitness.jpg",
-    status: "in-progress",
-    featured: false,
-  },
-  {
-    id: "blockchain-voting",
-    title: "Decentralized Voting System",
-    description:
-      "A secure, transparent voting platform built on blockchain technology, ensuring tamper-proof elections and verifiable results.",
-    tags: ["Solidity", "Ethereum", "Next.js", "Web3.js"],
-    image: "/images/projects/blockchain.jpg",
-    status: "planned",
-    featured: false,
   },
 ];
