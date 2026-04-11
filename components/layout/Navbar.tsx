@@ -43,14 +43,13 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 ${
         scrolled
-          ? "bg-surface/90 backdrop-blur-md border-b border-border/50 shadow-lg"
-          : "bg-background/20 backdrop-blur-sm md:bg-transparent border-b border-transparent"
+          ? "bg-surface/95 backdrop-blur-md border-b border-border/50 shadow-xl"
+          : "bg-surface border-b border-border/20 md:bg-transparent md:border-transparent md:backdrop-blur-none"
       }`}
       style={{ paddingTop: "env(safe-area-inset-top)" }}
     >
-      <div className="absolute inset-0 bg-background -z-10 h-[env(safe-area-inset-top)]" />
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <a
