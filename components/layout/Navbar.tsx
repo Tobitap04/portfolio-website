@@ -43,10 +43,10 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-[background-color,border-color,backdrop-filter] duration-200 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "glass border-b border-border/50"
-          : "bg-transparent"
+          ? "bg-surface/80 backdrop-blur-md border-b border-border/50"
+          : "bg-transparent border-b border-transparent"
       }`}
     >
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">

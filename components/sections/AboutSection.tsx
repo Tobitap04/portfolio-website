@@ -36,16 +36,7 @@ export function AboutSection() {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-8xl font-bold text-border/20">TT</div>
                 </div>
-                {/* Available badge overlay */}
-                <div className="absolute bottom-4 left-4">
-                  <span className="inline-flex items-center gap-2 px-3 py-1.5 text-xs text-text-primary bg-surface/80 backdrop-blur-sm border border-border rounded-full">
-                    <span className="relative flex h-1.5 w-1.5">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-                      <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500" />
-                    </span>
-                    Available for work
-                  </span>
-                </div>
+
               </div>
 
               {/* Name and role */}

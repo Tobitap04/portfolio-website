@@ -15,7 +15,7 @@ export const experience: ExperienceEntry[] = [
     year: "Oct 2025 – Present",
     type: "work",
     description:
-      "Working in the Research & Pre-Development team on AI-driven tooling for the aerospace and automotive industry. Building a web-based prototype that generates test cases for AutomationDesk from natural language requirements — powered by a multi-agent system (CrewAI), RAG over technical documentation, and MCP servers. Conducting technology research and presenting results to internal stakeholders in an agile environment using Azure DevOps.",
+      "Developing AI-driven tooling for the aerospace and automotive industries within the Research & Pre-Development team. Focused on architecting scalable, LLM-powered applications using multi-agent systems (CrewAI), advanced RAG pipelines, and Model Context Protocol (MCP) integrations. Evaluating cutting-edge AI frameworks and presenting technology research to internal stakeholders in an agile environment.",
   },
   {
     id: "edu-1",

@@ -7,16 +7,15 @@ interface VideoBackgroundProps {
 export function VideoBackground({ variant = "hero" }: VideoBackgroundProps) {
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none bg-background">
-      {/* Restored the video background */}
       <video
         autoPlay
         loop
         muted
         playsInline
         preload="auto"
-        className="absolute inset-0 w-full h-full object-cover opacity-80 blur-[4px] scale-105 mix-blend-screen"
+        className="absolute inset-0 w-full h-full object-cover blur-[4px] opacity-80 scale-105 mix-blend-screen"
       >
-        <source src="/videos/smoke-background.mp4" type="video/mp4" />
+        <source src="/videos/smoke-background.webm" type="video/webm" />
       </video>
 
       {/* Dark overlay for text readability */}
