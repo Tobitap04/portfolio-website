@@ -45,12 +45,17 @@ export function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 before:content-[''] before:absolute before:inset-0 before:pointer-events-none before:z-[-1] before:bg-[repeating-linear-gradient(0deg,transparent,transparent_2px,rgba(34,211,238,0.01)_2px,rgba(34,211,238,0.01)_4px)] ${
         scrolled
-          ? "bg-surface/95 backdrop-blur-md border-b border-border/50 shadow-xl"
-          : "bg-background border-b border-border/20 md:bg-transparent md:border-transparent md:backdrop-blur-none"
+          ? "bg-surface border-b border-border/50 shadow-xl md:bg-surface/95 md:backdrop-blur-md"
+          : "bg-surface border-b border-border/20 md:bg-transparent md:border-transparent md:backdrop-blur-none"
       }`}
-      style={{ paddingTop: "env(safe-area-inset-top)" }}
     >
-      <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div
+        className="absolute top-0 left-0 right-0 md:hidden bg-surface/95 backdrop-blur-md pointer-events-none"
+        style={{ height: "env(safe-area-inset-top)" }}
+        aria-hidden
+      />
+
+      <nav className="max-w-6xl mx-auto px-6 h-[calc(4rem+env(safe-area-inset-top))] pt-[env(safe-area-inset-top)] md:h-16 md:pt-0 flex items-center justify-between">
         {/* Logo */}
         <a
           href="#"
