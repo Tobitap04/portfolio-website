@@ -25,9 +25,9 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 
     const variants = {
       primary:
-        "bg-cta text-foreground hover:bg-cta-hover hover:-translate-y-[1px] glow-hover rounded-lg border border-transparent shadow-md",
+        "bg-primary text-background font-semibold hover:bg-accent hover:-translate-y-[1px] glow-hover rounded-lg border border-transparent shadow-[0_0_20px_rgba(34,211,238,0.15)]",
       secondary:
-        "bg-transparent text-primary border-2 border-primary hover:border-accent hover:text-accent hover:-translate-y-[1px] glow-hover rounded-lg shadow-sm",
+        "bg-transparent text-accent border border-accent/40 hover:border-accent hover:text-accent-hover hover:-translate-y-[1px] glow-hover rounded-lg",
       ghost:
         "bg-transparent text-text-secondary hover:text-text-primary hover:bg-surface rounded-lg",
       glass:

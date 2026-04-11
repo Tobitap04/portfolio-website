@@ -38,7 +38,7 @@ export const socialProfiles: SocialProfile[] = [
   },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/tobias-tappe-a64453384/",
+    url: "https://www.linkedin.com/in/tobias-tappe-a64453384",
     icon: LinkedInIcon,
   },
   {

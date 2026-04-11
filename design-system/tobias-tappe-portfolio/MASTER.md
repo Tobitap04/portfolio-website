@@ -7,8 +7,8 @@
 ---
 
 **Project:** Tobias Tappe Portfolio
-**Generated:** 2026-04-06 17:28:33
-**Category:** Developer Tool / IDE
+**Updated:** 2026-04-11
+**Aesthetic:** Terminal Precision — OLED dark, electric cyan, monospace detail font
 
 ---
 
@@ -18,186 +18,85 @@
 
 | Role | Hex | CSS Variable |
 |------|-----|--------------|
-| Primary | `#2563EB` | `--color-primary` |
-| Secondary | `#3B82F6` | `--color-secondary` |
-| CTA/Accent | `#F97316` | `--color-cta` |
-| Background | `#F8FAFC` | `--color-background` |
-| Text | `#1E293B` | `--color-text` |
+| Background | `#020408` | `--color-background` |
+| Surface | `#080C12` | `--color-surface` |
+| Surface Elevated | `#0D1420` | `--color-surface-elevated` |
+| Border | `#1A2332` | `--color-border` |
+| Text Primary | `#E8EDF5` | `--color-text-primary` |
+| Text Secondary | `#7A8FA8` | `--color-text-secondary` |
+| Text Muted | `#4A5D74` | `--color-text-muted` |
+| Accent / CTA | `#22D3EE` | `--color-accent` / `--color-cta` |
+| Accent Hover | `#67E8F9` | `--color-accent-hover` |
+| Accent Glow | `rgba(34,211,238,0.12)` | `--color-accent-glow` |
 
-**Color Notes:** Code dark + run green
+**No orange. Ever.** Orange has been removed from the palette entirely.
 
 ### Typography
 
-- **Heading Font:** Archivo
-- **Body Font:** Space Grotesk
-- **Mood:** minimal, portfolio, designer, creative, clean, artistic
-- **Google Fonts:** [Archivo + Space Grotesk](https://fonts.google.com/share?selection.family=Archivo:wght@300;400;500;600;700|Space+Grotesk:wght@300;400;500;600;700)
+- **Heading Font:** Syne (400–800) — geometric, confident, distinct
+- **Body / Mono Font:** DM Mono (300–500) — terminal feel, precise, readable
+- **Mood:** AI research interface, high-precision, premium dark
 
-**CSS Import:**
+**Google Fonts:**
 ```css
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap');
 ```
 
 ### Spacing Variables
 
 | Token | Value | Usage |
 |-------|-------|-------|
-| `--space-xs` | `4px` / `0.25rem` | Tight gaps |
-| `--space-sm` | `8px` / `0.5rem` | Icon gaps, inline spacing |
-| `--space-md` | `16px` / `1rem` | Standard padding |
-| `--space-lg` | `24px` / `1.5rem` | Section padding |
-| `--space-xl` | `32px` / `2rem` | Large gaps |
-| `--space-2xl` | `48px` / `3rem` | Section margins |
-| `--space-3xl` | `64px` / `4rem` | Hero padding |
-
-### Shadow Depths
-
-| Level | Value | Usage |
-|-------|-------|-------|
-| `--shadow-sm` | `0 1px 2px rgba(0,0,0,0.05)` | Subtle lift |
-| `--shadow-md` | `0 4px 6px rgba(0,0,0,0.1)` | Cards, buttons |
-| `--shadow-lg` | `0 10px 15px rgba(0,0,0,0.1)` | Modals, dropdowns |
-| `--shadow-xl` | `0 20px 25px rgba(0,0,0,0.15)` | Hero images, featured cards |
-
----
-
-## Component Specs
-
-### Buttons
-
-```css
-/* Primary Button */
-.btn-primary {
-  background: #F97316;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: all 200ms ease;
-  cursor: pointer;
-}
-
-.btn-primary:hover {
-  opacity: 0.9;
-  transform: translateY(-1px);
-}
-
-/* Secondary Button */
-.btn-secondary {
-  background: transparent;
-  color: #2563EB;
-  border: 2px solid #2563EB;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: all 200ms ease;
-  cursor: pointer;
-}
-```
-
-### Cards
-
-```css
-.card {
-  background: #F8FAFC;
-  border-radius: 12px;
-  padding: 24px;
-  box-shadow: var(--shadow-md);
-  transition: all 200ms ease;
-  cursor: pointer;
-}
-
-.card:hover {
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-2px);
-}
-```
-
-### Inputs
-
-```css
-.input {
-  padding: 12px 16px;
-  border: 1px solid #E2E8F0;
-  border-radius: 8px;
-  font-size: 16px;
-  transition: border-color 200ms ease;
-}
-
-.input:focus {
-  border-color: #2563EB;
-  outline: none;
-  box-shadow: 0 0 0 3px #2563EB20;
-}
-```
-
-### Modals
-
-```css
-.modal-overlay {
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(4px);
-}
-
-.modal {
-  background: white;
-  border-radius: 16px;
-  padding: 32px;
-  box-shadow: var(--shadow-xl);
-  max-width: 500px;
-  width: 90%;
-}
-```
+| `--space-xs` | `4px` | Tight gaps |
+| `--space-sm` | `8px` | Icon gaps, inline spacing |
+| `--space-md` | `16px` | Standard padding |
+| `--space-lg` | `24px` | Section padding |
+| `--space-xl` | `32px` | Large gaps |
+| `--space-2xl` | `48px` | Section margins |
+| `--space-3xl` | `64px` | Hero padding |
 
 ---
 
 ## Style Guidelines
 
-**Style:** Dark Mode (OLED)
+**Style:** Terminal Precision / OLED Dark
 
-**Keywords:** Dark theme, low light, high contrast, deep black, midnight blue, eye-friendly, OLED, night mode, power efficient
+**Keywords:** Deep black, electric cyan, monospace, AI interface, precision, terminal, high-contrast, high-readability
 
-**Best For:** Night-mode apps, coding platforms, entertainment, eye-strain prevention, OLED devices, low-light
-
-**Key Effects:** Minimal glow (text-shadow: 0 0 10px), dark-to-light transitions, low white emission, high readability, visible focus
+**Key Effects:**
+- Cyan glow on interactive elements: `box-shadow: 0 0 20px rgba(34,211,238,0.15)`
+- Subtle scanline texture overlay via CSS `repeating-linear-gradient`
+- Cyan accent line at top of hero section
+- Glassmorphism with cyan-tinted borders
 
 ### Page Pattern
 
 **Pattern Name:** Portfolio Grid
 
-- **Conversion Strategy:** Visuals first. Filter by category. Fast loading essential.
-- **CTA Placement:** Project Card Hover + Footer Contact
-- **Section Order:** 1. Hero (Name/Role), 2. Project Grid (Masonry), 3. About/Philosophy, 4. Contact
+- **Section Order:** 1. Hero (Name/Role), 2. Projects (Grid), 3. About/Skills/Experience, 4. Resume, 5. Contact
+- **CTA Placement:** Hero buttons + Contact section email
 
 ---
 
 ## Anti-Patterns (Do NOT Use)
 
-- ❌ Light mode default
-- ❌ Slow performance
-
-### Additional Forbidden Patterns
-
-- ❌ **Emojis as icons** — Use SVG icons (Heroicons, Lucide, Simple Icons)
-- ❌ **Missing cursor:pointer** — All clickable elements must have cursor:pointer
+- ❌ **Orange in any form** — completely removed from palette
+- ❌ **Purple gradients on white** — cliché AI aesthetic
+- ❌ **Inter / Roboto / Arial** — too generic
+- ❌ **Light mode default**
+- ❌ **Emojis as icons** — Use SVG icons (Lucide)
+- ❌ **Missing cursor:pointer** — All clickable elements must have it
 - ❌ **Layout-shifting hovers** — Avoid scale transforms that shift layout
-- ❌ **Low contrast text** — Maintain 4.5:1 minimum contrast ratio
-- ❌ **Instant state changes** — Always use transitions (150-300ms)
-- ❌ **Invisible focus states** — Focus states must be visible for a11y
+- ❌ **Low contrast text** — 4.5:1 minimum
 
 ---
 
 ## Pre-Delivery Checklist
 
-Before delivering any UI code, verify:
-
-- [ ] No emojis used as icons (use SVG instead)
-- [ ] All icons from consistent icon set (Heroicons/Lucide)
+- [ ] No orange anywhere
+- [ ] All icons from Lucide (consistent)
 - [ ] `cursor-pointer` on all clickable elements
-- [ ] Hover states with smooth transitions (150-300ms)
-- [ ] Light mode: text contrast 4.5:1 minimum
+- [ ] Hover states with smooth transitions (150ms)
+- [ ] Text contrast 4.5:1 minimum
 - [ ] Focus states visible for keyboard navigation
 - [ ] `prefers-reduced-motion` respected
 - [ ] Responsive: 375px, 768px, 1024px, 1440px
-- [ ] No content hidden behind fixed navbars
-- [ ] No horizontal scroll on mobile

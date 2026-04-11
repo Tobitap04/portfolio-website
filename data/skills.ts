@@ -5,26 +5,45 @@ export interface SkillCategory {
 
 export const skillCategories: SkillCategory[] = [
   {
-    name: "Languages",
-    skills: ["TypeScript", "JavaScript", "Python", "Java", "C++", "SQL"],
+    name: "AI & Machine Learning",
+    skills: [
+      "Large Language Models (LLM)",
+      "Agentic AI",
+      "Retrieval-Augmented Generation (RAG)",
+      "Machine Learning",
+      "Model Context Protocol (MCP)",
+      "CrewAI",
+    ],
   },
   {
-    name: "Frameworks",
-    skills: ["React", "Next.js", "Node.js", "Express", "Tailwind CSS", "FastAPI"],
+    name: "Languages & Frameworks",
+    skills: [
+      "Python",
+      "Java",
+      "SQL",
+      "Node.js",
+      "React / Next.js",
+      "Git",
+    ],
   },
   {
     name: "Tools & Platforms",
-    skills: ["Git", "Docker", "Vercel", "PostgreSQL", "Firebase", "Figma"],
+    skills: [
+      "Azure DevOps",
+      "GitHub Copilot",
+      "VS Code",
+      "n8n",
+      "GitHub",
+    ],
   },
   {
-    name: "Concepts",
+    name: "Computer Science",
     skills: [
-      "Full-Stack Development",
-      "REST APIs",
-      "CI/CD",
-      "Agile / Scrum",
-      "UI/UX Design",
-      "Machine Learning",
+      "IT Security",
+      "Data Science",
+      "Algorithms & Data Structures",
+      "Software Modeling",
+      "UI/UX",
     ],
   },
 ];

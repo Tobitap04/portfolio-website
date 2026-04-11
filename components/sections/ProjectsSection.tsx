@@ -8,9 +8,6 @@ import { Button } from "@/components/ui/Button";
 
 export function ProjectsSection() {
   const featuredProjects = projects.filter((p) => p.featured);
-  const upcomingProjects = projects.filter(
-    (p) => p.status === "in-progress" || p.status === "planned"
-  );
 
   return (
     <section id="projects" className="py-24 md:py-32">
@@ -36,29 +33,6 @@ export function ProjectsSection() {
           ))}
         </div>
 
-        {/* Upcoming projects */}
-        {upcomingProjects.length > 0 && (
-          <div className="mt-20">
-            <h3 className="text-xl font-semibold text-text-primary mb-8 flex items-center gap-3">
-              <span className="h-px flex-1 max-w-[60px] bg-border" />
-              Upcoming Ideas
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {upcomingProjects.map((project, index) => (
-                <motion.div
-                  key={project.id}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: "-60px" }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                >
-                  <ProjectCard project={project} />
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        )}
-
         {/* Bottom actions */}
         <motion.div
           className="mt-16 flex flex-wrap items-center justify-center gap-4"
@@ -67,7 +41,7 @@ export function ProjectsSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <Button variant="secondary" href="https://github.com/tobiastappe" external>
+          <Button variant="secondary" href="https://github.com/Tobitap04" external>
             All Projects on GitHub
           </Button>
           <Button variant="ghost" href="#contact">

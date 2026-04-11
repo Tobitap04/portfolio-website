@@ -9,47 +9,39 @@ export interface ExperienceEntry {
 
 export const experience: ExperienceEntry[] = [
   {
-    id: "work-dspace",
-    role: "Working Student in Research & Advanced Development",
+    id: "work-1",
+    role: "Working Student – Research & Pre-Development",
     company: "dSPACE",
     year: "Oct 2025 – Present",
     type: "work",
     description:
-      "Driving project-based research focusing on the latest AI advancements. Gaining hands-on experience with Retrieval-Augmented Generation (RAG), Model Context Protocol (MCP) servers, Agentic AI, and advanced prompt engineering. Utilizing Python and Azure DevOps to seamlessly bridge the gap between experimental AI applications and robust software systems.",
+      "Working in the Research & Pre-Development team on AI-driven tooling for the aerospace and automotive industry. Building a web-based prototype that generates test cases for AutomationDesk from natural language requirements — powered by a multi-agent system (CrewAI), RAG over technical documentation, and MCP servers. Conducting technology research and presenting results to internal stakeholders in an agile environment using Azure DevOps.",
   },
   {
-    id: "edu-msc",
+    id: "edu-1",
     role: "M.Sc. Computer Science",
     company: "Paderborn University",
-    year: "Oct 2025 – Sept 2027",
+    year: "Oct 2025 – Present",
     type: "education",
-    description: "Focusing on IT Security and Machine Learning.",
+    description:
+      "Focus on Machine Learning and IT Security. Current grade: 1.4 (≈ 3.6 GPA equivalent). Scholarship recipient (Deutschlandstipendium).",
   },
   {
-    id: "work-tutor",
-    role: "Student Assistant - Tutor",
+    id: "work-2",
+    role: "Student Assistant – Tutor",
     company: "Paderborn University",
     year: "Oct 2023 – Feb 2024",
     type: "work",
     description:
-      "Led Data Modeling tutorial sessions for groups of ~20 students. Managed grading for assignments and exams. Successfully completed the higher education didactics program, earning the official 'T-Cert' tutoring certification.",
+      "Led weekly tutorials in Software Modeling for groups of ~20 students. Graded assignments and exams. Completed the university's teaching qualification program, earning the T-Cert certification in didactics and instructional design.",
   },
   {
-    id: "edu-bsc",
+    id: "edu-2",
     role: "B.Sc. Computer Science",
     company: "Paderborn University",
     year: "Oct 2022 – Oct 2025",
     type: "education",
     description:
-      "Graduated with a final grade of 1.2. Awarded the prestigious Deutschlandstipendium for outstanding academic performance.",
-  },
-  {
-    id: "edu-abitur",
-    role: "Abitur (A-Levels)",
-    company: "Gymnasium Horn-Bad Meinberg",
-    year: "Aug 2014 – Jun 2022",
-    type: "education",
-    description:
-      "Graduated with a final grade of 2.2. Intensive advanced courses in Mathematics and Physics.",
+      "Grade: 1.2 (≈ 3.8 GPA equivalent). Focus areas: Software Development, Data Science, IT Security, and Machine Learning.",
   },
 ];

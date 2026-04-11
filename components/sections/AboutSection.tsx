@@ -9,13 +9,13 @@ import { ExperienceItem } from "@/components/ui/ExperienceItem";
 import { Button } from "@/components/ui/Button";
 
 const aboutSkills = [
-  "Software Engineering",
-  "React & Next.js",
-  "Python & Azure DevOps",
-  "Agentic Workflow (n8n)",
-  "AI Prompt Engineering",
-  "RAG & MCP Servers",
-  "Claude, Gemini & Antigravity",
+  "Python",
+  "LLMs",
+  "Agentic AI",
+  "RAG",
+  "MCP",
+  "Machine Learning",
+  "IT Security",
 ];
 
 export function AboutSection() {
@@ -51,10 +51,10 @@ export function AboutSection() {
               {/* Name and role */}
               <div>
                 <h3 className="text-xl font-semibold text-text-primary">
-                  Hello I am <span className="text-gradient">Tobias Tappe</span>
+                  Hello, I&apos;m <span className="text-gradient">Tobias Tappe</span>
                 </h3>
                 <p className="text-sm text-text-secondary mt-1">
-                  Software Developer based in Germany.
+                  CS Master&apos;s Student &amp; AI Software Developer
                 </p>
               </div>
 
@@ -87,13 +87,13 @@ export function AboutSection() {
             {/* Bio */}
             <div className="bg-surface border border-border rounded-2xl p-6">
               <p className="text-text-secondary leading-relaxed">
-                I&apos;m Tobias Tappe, an M.Sc. Computer Science student at
-                Paderborn University and a passionate Software Developer. While I maintain
-                a rock-solid foundation in traditional software architecture, data structures, 
-                and full-stack web development, my true edge lies in leveraging
-                advanced AI to iterate at unprecedented speeds. I regularly collaborate with
-                agentic AI tools like Claude, Gemini, Google Antigravity, and Stitch to 
-                prototype, test, and deploy complex applications rapidly.
+                I&apos;m a Computer Science Master&apos;s student at Paderborn University with a
+                focus on Machine Learning and IT Security, currently working as a Software
+                Developer in Research &amp; Pre-Development at dSPACE. My work sits at the
+                intersection of applied AI and software engineering — from building agentic
+                systems with CrewAI and MCP to RAG pipelines and LLM evaluation frameworks.
+                I&apos;m drawn to problems where AI moves from prototype to something that
+                actually works in practice.
               </p>
 
               {/* Skill tags */}

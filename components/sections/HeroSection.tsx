@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { Mouse } from "lucide-react";
 import { VideoBackground } from "@/components/ui/VideoBackground";
-import { StatusBadge } from "@/components/ui/StatusBadge";
 import { Button } from "@/components/ui/Button";
 
 export function HeroSection() {
@@ -15,19 +14,11 @@ export function HeroSection() {
       <VideoBackground variant="hero" />
 
       <div className="relative z-30 max-w-4xl mx-auto px-6 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <StatusBadge text="Software Engineer & AI Specialist" />
-        </motion.div>
-
         <motion.h1
-          className="mt-8 text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light tracking-tight text-text-primary"
+          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light tracking-tight text-text-primary"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.15 }}
+          transition={{ duration: 0.7, delay: 0.1 }}
         >
           Tobias{" "}
           <span className="text-gradient font-normal">Tappe</span>
@@ -37,17 +28,17 @@ export function HeroSection() {
           className="mt-6 text-lg md:text-xl text-text-secondary max-w-2xl mx-auto leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
+          transition={{ duration: 0.6, delay: 0.25 }}
         >
-          Engineering modern, scalable web applications with a foundation in robust
-          software architecture, supercharged by cutting-edge Agentic AI workflows.
+          CS Master&apos;s Student at Paderborn University · AI &amp; Software Dev at dSPACE ·
+          Building agentic systems, RAG pipelines &amp; LLM tooling.
         </motion.p>
 
         <motion.div
           className="mt-10 flex flex-wrap items-center justify-center gap-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.45 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
         >
           <Button variant="primary" size="lg" href="#projects">
             See Projects

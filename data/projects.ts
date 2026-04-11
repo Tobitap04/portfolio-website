@@ -12,33 +12,45 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "llm-robustness-framework",
-    title: "LLM Robustness Framework",
+    id: "project-remnote-skill",
+    title: "RemNote Flashcard Skill",
     description:
-      "A comprehensive framework evaluating the robustness of Large Language Models when answering causal questions. Developed as my Bachelor's thesis, it systematically analyzes different prompting strategies and assesses the stability and reliability of model responses under varying conditions.",
-    tags: ["LLM", "Python", "Machine Learning", "Research"],
-    image: "/images/projects/portfolio.jpg", // Placeholder
-    githubUrl: "https://github.com/tobiastappe", // Add actual URL later
+      "An AI skill that generates complete, opinionated flashcard sets from lecture notes and PDF slides — tailored exactly to my learning style and RemNote best practices. Saves hours of manual card creation every week by producing high-quality, ready-to-review cards that are consistent in format and depth.",
+    tags: ["Python", "LLMs", "AI Agents", "Automation", "Education"],
+    image: "/images/projects/portfolio.jpg",
+    githubUrl: "https://github.com/Tobitap04/skills",
     status: "completed",
     featured: true,
   },
   {
-    id: "coaching-website",
-    title: "Katharina Tappe Coaching",
+    id: "project-n8n-telegram",
+    title: "n8n Personal AI Automation Hub",
     description:
-      "Designed and developed a professional portfolio and booking website for a learning therapist. Rapidly prototyped high-fidelity UI using Google's Stitch and implemented the full custom Next.js frontend via an iterative agentic coding loop with Claude, Gemini, and Google Antigravity.",
-    tags: ["React", "Next.js", "Web Development", "UI/UX"],
-    image: "/images/projects/portfolio.jpg", // Placeholder
+      "A Telegram-connected n8n workflow that powers a range of small, AI-driven automations I use daily: summarizing voice messages, converting images or handwritten notes into Anki flashcards, and turning a timetable photo into an ICS calendar file. All accessible directly from Telegram — no app switching needed.",
+    tags: ["n8n", "Telegram", "AI", "Automation", "Workflows"],
+    image: "/images/projects/ai-chatbot.jpg",
     status: "completed",
     featured: true,
   },
   {
-    id: "telegram-ai-assistant",
-    title: "Telegram AI Assistant",
+    id: "project-katharina-tappe",
+    title: "Katharina Tappe – Lerntherapie",
     description:
-      "An automated workflow assistant built with n8n for Telegram. It enables voice message summarization, automatic generation of Anki flashcards from notes and PDFs, and uses OCR/Vision to parse photos of timetables directly into calendar events.",
-    tags: ["n8n", "Automation", "API Integration", "AI", "Python"],
-    image: "/images/projects/ai-chatbot.jpg", // Placeholder
+      "A professional website for my mum's learning therapy and tutoring practice. Built with Next.js and Tailwind CSS, it displays all courses and services she offers, synced directly with her Google Calendar so sessions are always up-to-date without a complex backend. Includes a multi-channel contact form optimized for easy booking across different platforms.",
+    tags: ["Next.js", "Tailwind CSS", "Google Calendar", "TypeScript"],
+    image: "/images/projects/portfolio.jpg",
+    liveUrl: "https://www.katharina-tappe.de",
+    status: "completed",
+    featured: true,
+  },
+  {
+    id: "project-robustcausaleval",
+    title: "RobustCausalEval",
+    description:
+      "An evaluation framework for analyzing how reliably LLMs answer causal questions under various perturbations (typos, biased phrasing, irrelevant context). Developed as part of my Bachelor's thesis at Paderborn University. Key finding: even semantics-preserving perturbations cause significant instability in model outputs. By combining input preprocessing, few-shot prompting, and output format constraints, robustness improved by up to 60% over baseline across all metrics.",
+    tags: ["Python", "LLMs", "NLP", "Research", "Evaluation"],
+    image: "/images/projects/portfolio.jpg",
+    githubUrl: "https://github.com/Tobitap04/robust-causal-eval",
     status: "completed",
     featured: true,
   },
