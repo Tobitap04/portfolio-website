@@ -20,7 +20,7 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tobias Tappe — AI & Software Developer",
+  title: "Portfolio – Tobias Tappe",
   description:
     "Portfolio of Tobias Tappe, a CS Master's student at Paderborn University and AI Software Developer at dSPACE. Explore projects, skills, and experience in agentic AI, LLMs, and software engineering.",
   keywords: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Tobias Tappe" }],
   openGraph: {
-    title: "Tobias Tappe — AI & Software Developer",
+    title: "Portfolio – Tobias Tappe",
     description:
       "Portfolio showcasing projects, skills, and experience in agentic AI and software engineering.",
     type: "website",
@@ -44,13 +44,16 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tobias Tappe — AI & Software Developer",
+    title: "Portfolio – Tobias Tappe",
     description:
       "Portfolio showcasing projects, skills, and experience in agentic AI and software engineering.",
   },
   robots: {
     index: true,
     follow: true,
+  },
+  icons: {
+    icon: "/favicon-tt.svg",
   },
 };
 

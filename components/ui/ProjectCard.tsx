@@ -7,13 +7,15 @@ import { SkillTag } from "./SkillTag";
 
 interface ProjectCardProps {
   project: Project;
+  onClick?: () => void;
 }
 
-export function ProjectCard({ project }: ProjectCardProps) {
+export function ProjectCard({ project, onClick }: ProjectCardProps) {
   const isCompleted = project.status === "completed";
 
   return (
     <div
+      onClick={onClick}
       className={`group relative rounded-xl overflow-hidden border transition-[border-color,box-shadow,transform] duration-150 ${
         isCompleted
           ? "border-border hover:border-white/10 hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-primary/5 hover:-translate-y-1 bg-surface cursor-pointer"
@@ -44,16 +46,17 @@ export function ProjectCard({ project }: ProjectCardProps) {
         />
 
         {/* Glassmorphic overlay button on hover */}
-        {isCompleted && (project.githubUrl || project.liveUrl) && (
+        {isCompleted && (
           <div className="absolute inset-0 flex items-end justify-center pb-6 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-            <a
-              href={project.liveUrl || project.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                if (onClick) onClick();
+              }}
               className="glass px-6 py-2.5 rounded-full text-sm text-text-primary flex items-center gap-2 hover:bg-surface-elevated/60 transition-colors cursor-pointer"
             >
-              View Project <ArrowUpRight size={14} />
-            </a>
+              Learn More <ArrowUpRight size={14} />
+            </button>
           </div>
         )}
 

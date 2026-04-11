@@ -20,19 +20,20 @@ const aboutSkills = [
 
 export function AboutSection() {
   return (
-    <section id="about" className="py-24 md:py-32">
+    <section id="about" className="py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
           {/* Left column — Photo card */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
+            className="lg:col-span-5"
           >
-            <div className="bg-surface border border-border rounded-2xl p-6 space-y-6">
+            <div className="bg-surface border border-border rounded-2xl p-5 space-y-5">
               {/* Photo placeholder */}
-              <div className="relative aspect-[4/5] rounded-xl overflow-hidden bg-surface-elevated">
+              <div className="relative aspect-square rounded-xl overflow-hidden bg-surface-elevated">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-8xl font-bold text-border/20">TT</div>
                 </div>
@@ -73,10 +74,10 @@ export function AboutSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.15 }}
-            className="space-y-8"
+            className="space-y-6 lg:col-span-7"
           >
             {/* Bio */}
-            <div className="bg-surface border border-border rounded-2xl p-6">
+            <div className="bg-surface border border-border rounded-2xl p-5">
               <p className="text-text-secondary leading-relaxed">
                 I&apos;m a Computer Science Master&apos;s student at Paderborn University with a
                 focus on Machine Learning and IT Security, currently working as a Software
@@ -88,7 +89,7 @@ export function AboutSection() {
               </p>
 
               {/* Skill tags */}
-              <div className="mt-6 flex flex-wrap gap-2">
+              <div className="mt-5 flex flex-wrap gap-2">
                 {aboutSkills.map((skill) => (
                   <SkillTag key={skill} name={skill} />
                 ))}
@@ -96,7 +97,7 @@ export function AboutSection() {
             </div>
 
             {/* Experience table */}
-            <div className="bg-surface border border-border rounded-2xl p-6">
+            <div className="bg-surface border border-border rounded-2xl p-5">
               <div className="space-y-0">
                 {experience.map((entry, index) => (
                   <ExperienceItem

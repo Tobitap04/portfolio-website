@@ -15,7 +15,7 @@ export function HeroSection() {
 
       <div className="relative z-30 max-w-4xl mx-auto px-6 text-center">
         <motion.h1
-          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light tracking-tight text-text-primary"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light tracking-tight text-text-primary"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
@@ -25,7 +25,7 @@ export function HeroSection() {
         </motion.h1>
 
         <motion.p
-          className="mt-6 text-lg md:text-xl text-text-secondary max-w-2xl mx-auto leading-relaxed"
+          className="mt-6 text-base md:text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.25 }}
@@ -40,10 +40,10 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <Button variant="primary" size="lg" href="#projects">
+          <Button variant="primary" size="md" href="#projects">
             See Projects
           </Button>
-          <Button variant="secondary" size="lg" href="#contact">
+          <Button variant="secondary" size="md" href="#contact">
             Get in Touch
           </Button>
         </motion.div>

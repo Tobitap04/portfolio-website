@@ -2,8 +2,10 @@ export interface Project {
   id: string;
   title: string;
   description: string;
+  longDescription?: string | string[];
   tags: string[];
   image: string;
+  images?: string[];
   githubUrl?: string;
   liveUrl?: string;
   status: "completed" | "in-progress" | "planned";
@@ -15,9 +17,15 @@ export const projects: Project[] = [
     id: "project-remnote-skill",
     title: "RemNote Flashcard Skill",
     description:
-      "An AI skill that generates complete, opinionated flashcard sets from lecture notes and PDF slides — tailored exactly to my learning style and RemNote best practices. Saves hours of manual card creation every week by producing high-quality, ready-to-review cards that are consistent in format and depth.",
+      "An AI skill that generates complete, opinionated flashcard sets from lecture notes and PDF slides — tailored exactly to my learning style and RemNote best practices.",
+    longDescription: [
+      "An AI skill that generates complete, opinionated flashcard sets from lecture notes and PDF slides — tailored exactly to my learning style and RemNote best practices.",
+      "It saves hours of manual card creation every week by producing high-quality, ready-to-review cards that are consistent in format and depth.",
+      "The automation pipeline parses complex structural data, converts concepts into highly atomic questions, and interfaces seamlessly with the RemNote ecosystem."
+    ],
     tags: ["Python", "LLMs", "AI Agents", "Automation", "Education"],
     image: "/images/projects/portfolio.jpg",
+    images: ["/images/projects/portfolio.jpg", "/images/projects/ai-chatbot.jpg"],
     githubUrl: "https://github.com/Tobitap04/skills",
     status: "completed",
     featured: true,

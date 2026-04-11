@@ -1,13 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { projects } from "@/data/projects";
+import { useState } from "react";
+import { projects, type Project } from "@/data/projects";
 import { ProjectCard } from "@/components/ui/ProjectCard";
+import { ProjectModal } from "@/components/ui/ProjectModal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 
 export function ProjectsSection() {
   const featuredProjects = projects.filter((p) => p.featured);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   return (
     <section id="projects" className="py-24 md:py-32">
@@ -28,7 +31,7 @@ export function ProjectsSection() {
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <ProjectCard project={project} />
+              <ProjectCard project={project} onClick={() => setSelectedProject(project)} />
             </motion.div>
           ))}
         </div>
@@ -49,6 +52,12 @@ export function ProjectsSection() {
           </Button>
         </motion.div>
       </div>
+
+      <ProjectModal 
+        project={selectedProject} 
+        isOpen={selectedProject !== null} 
+        onClose={() => setSelectedProject(null)} 
+      />
     </section>
   );
 }
