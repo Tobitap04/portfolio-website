@@ -1,0 +1,7 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="32" height="32" rx="8" fill="#0A0A0A"/>
+  <!-- First T - Classic White -->
+  <path d="M8 10H20V12H15V22H13V12H8V10Z" fill="white"/>
+  <!-- Second T - Staggered and Cyan Accent -->
+  <path d="M16 14H24V16H21V22H19V16H16V14Z" fill="#22D3EE"/>
+</svg>

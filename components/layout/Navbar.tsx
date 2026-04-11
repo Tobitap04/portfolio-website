@@ -43,11 +43,10 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 before:content-[''] before:absolute before:inset-0 before:pointer-events-none before:z-[-1] before:bg-[repeating-linear-gradient(0deg,transparent,transparent_2px,rgba(34,211,238,0.01)_2px,rgba(34,211,238,0.01)_4px)] ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 before:content-[''] before:absolute before:inset-0 before:pointer-events-none before:z-[-1] before:bg-[repeating-linear-gradient(0deg,transparent,transparent_2px,rgba(34,211,238,0.01)_2px,rgba(34,211,238,0.01)_4px)] ${scrolled
           ? "bg-surface border-b border-border/50 shadow-xl md:bg-surface/95 md:backdrop-blur-md"
           : "bg-surface border-b border-border/20 md:bg-transparent md:border-transparent md:backdrop-blur-none"
-      }`}
+        }`}
     >
       <div
         className="absolute top-0 left-0 right-0 md:hidden bg-surface/95 backdrop-blur-md pointer-events-none"
@@ -70,11 +69,10 @@ export function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className={`px-4 py-2 text-sm rounded-full transition-colors duration-150 cursor-pointer ${
-                activeSection === link.href
+              className={`px-4 py-2 text-sm rounded-full transition-colors duration-150 cursor-pointer ${activeSection === link.href
                   ? "text-text-primary bg-surface"
                   : "text-text-secondary hover:text-text-primary"
-              }`}
+                }`}
             >
               {link.label}
             </a>
@@ -99,11 +97,10 @@ export function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className={`px-4 py-3 text-sm rounded-lg transition-colors duration-150 ${
-                  activeSection === link.href
+                className={`px-4 py-3 text-sm rounded-lg transition-colors duration-150 ${activeSection === link.href
                     ? "text-text-primary bg-surface"
                     : "text-text-secondary hover:text-text-primary hover:bg-surface/50"
-                }`}
+                  }`}
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}
