@@ -27,7 +27,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Portfolio – Tobias Tappe",
+  title: "Tobias Tappe | Portfolio",
   description:
     "Portfolio of Tobias Tappe, a CS Master's student at Paderborn University and AI Software Developer at dSPACE. Explore projects, skills, and experience in agentic AI, LLMs, and software engineering.",
   keywords: [
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Tobias Tappe" }],
   openGraph: {
-    title: "Portfolio – Tobias Tappe",
+    title: "Tobias Tappe | Portfolio",
     description:
       "Portfolio showcasing projects, skills, and experience in agentic AI and software engineering.",
     type: "website",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Portfolio – Tobias Tappe",
+    title: "Tobias Tappe | Portfolio",
     description:
       "Portfolio showcasing projects, skills, and experience in agentic AI and software engineering.",
   },

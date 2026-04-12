@@ -38,12 +38,12 @@ export const socialProfiles: SocialProfile[] = [
   },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/tobias-tappe-a64453384",
+    url: "https://www.linkedin.com/in/tobias-tappe",
     icon: LinkedInIcon,
   },
   {
     name: "Instagram",
-    url: "https://www.instagram.com/tobi04.photos?igsh=aGNvOG8wZmN2dTls&utm_source=qr",
+    url: "https://www.instagram.com/tobi04.photos",
     icon: InstagramIcon,
   },
 ];

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { socialProfiles } from "@/data/social";
 import { experience } from "@/data/experience";
 import { SocialLink } from "@/components/ui/SocialLink";
@@ -10,11 +11,11 @@ import { Button } from "@/components/ui/Button";
 
 const aboutSkills = [
   "Python",
+  "Machine Learning",
   "LLMs",
   "Agentic AI",
-  "RAG",
   "MCP",
-  "Machine Learning",
+  "n8n",
   "IT Security",
 ];
 
@@ -39,11 +40,16 @@ export function AboutSection() {
             className="lg:col-span-4 h-full flex flex-col"
           >
             <div className="bg-surface border border-border rounded-2xl p-5 flex-1 flex flex-col">
-              {/* Photo placeholder */}
+              {/* Profile Photo */}
               <div className="relative aspect-[4/5] w-3/4 mx-auto rounded-xl overflow-hidden bg-surface-elevated mb-5">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-4xl font-bold text-border/20">TT</div>
-                </div>
+                <Image
+                  src="/images/foto-tappe.webp"
+                  alt="Tobias Tappe"
+                  fill
+                  className="object-cover brightness-[0.85] contrast-[1.05]"
+                  sizes="(max-width: 768px) 100vw, 30vw"
+                  priority
+                />
               </div>
 
               {/* Name and role */}
@@ -90,12 +96,12 @@ export function AboutSection() {
             <div className="bg-surface border border-border rounded-2xl p-5 flex-1 flex flex-col justify-center">
               <p className="text-text-secondary leading-relaxed">
                 I&apos;m a Computer Science Master&apos;s student at Paderborn University with a
-                focus on Machine Learning and IT Security, currently working as a Software
-                Developer in Research &amp; Pre-Development at dSPACE. My work sits at the
+                focus on Machine Learning and IT Security, currently working in Research & Pre-Development at dSPACE. My work sits at the
                 intersection of applied AI and software engineering — from building agentic
-                systems with CrewAI and MCP to RAG pipelines and LLM evaluation frameworks.
+                systems with CrewAI to complex automation with n8n and specialized LLM tooling.
                 I&apos;m drawn to problems where AI moves from prototype to something that
-                actually works in practice.
+                actually works in practice. In my free time, you&apos;ll often find me taking photos for
+                my Instagram, working out at the gym, or picking up my newest hobby: learning to play the guitar.
               </p>
 
               {/* Skill tags */}

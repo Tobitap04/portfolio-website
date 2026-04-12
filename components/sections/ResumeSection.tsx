@@ -123,7 +123,7 @@ export function ResumeSection() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
             {skillCategories.map((category) => (
               <div key={category.name}>
                 <h3 className="text-sm font-medium uppercase tracking-wider text-text-muted mb-4">

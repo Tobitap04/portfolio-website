@@ -31,7 +31,7 @@ export function HeroSection() {
           transition={{ duration: 0.6, delay: 0.25 }}
         >
           CS Master&apos;s Student at Paderborn University · AI &amp; Software Dev at dSPACE ·
-          Building agentic systems, RAG pipelines &amp; LLM tooling.
+          Building agentic systems, complex automations &amp; LLM tooling.
         </motion.p>
 
         <motion.div

@@ -15,9 +15,9 @@ export const experience: ExperienceEntry[] = [
     year: "Since Oct 2025",
     type: "work",
     description: [
-      "Developing AI-driven tooling for the aerospace and automotive industries within the Research & Pre-Development team.",
-      "Focused on architecting scalable, LLM-powered applications using multi-agent systems (CrewAI), advanced RAG pipelines, and Model Context Protocol (MCP) integrations.",
-      "Evaluating cutting-edge AI frameworks and presenting technology research to internal stakeholders in an agile environment.",
+      "Developing AI-powered software and tooling for the automotive and aerospace industries in the Research & Pre-Development team.",
+      "Built a web-based prototype (Node.js/Python) for automated test case generation using multi-agent systems and specialized MCP integrations.",
+      "Leading technology research and presenting prototype evaluations within an agile development environment.",
     ],
   },
   {
@@ -26,8 +26,11 @@ export const experience: ExperienceEntry[] = [
     company: "Paderborn University",
     year: "Since Oct 2025",
     type: "education",
-    description:
-      "Focus on Machine Learning and IT Security. Current grade: 1.4 (≈ 3.6 GPA equivalent). Scholarship recipient (Deutschlandstipendium).",
+    description: [
+      "Current grade: 1.4 (≈ 3.6 GPA equivalent). ",
+      "Focus areas: Machine Learning and IT Security. ",
+      "Scholarship recipient (Deutschlandstipendium).",
+    ],
   },
   {
     id: "work-2",
@@ -36,7 +39,7 @@ export const experience: ExperienceEntry[] = [
     year: "Oct 2023 – Feb 2024",
     type: "work",
     description: [
-      "Led weekly tutorials in Software Modeling for groups of ~20 students. Graded assignments and exams.",
+      "Led weekly tutorials in Software Modeling for groups of ~20 students. Graded assignments and exams. ",
       "Earned the T-Cert certification in didactics and instructional design.",
     ],
   },
@@ -46,7 +49,10 @@ export const experience: ExperienceEntry[] = [
     company: "Paderborn University",
     year: "Oct 2022 – Oct 2025",
     type: "education",
-    description:
-      "Grade: 1.2 (≈ 3.8 GPA equivalent). Focus areas: Software Development, Data Science, IT Security, and Machine Learning.",
+    description: [
+      "Grade: 1.2 (≈ 3.8 GPA equivalent). ",
+      "Focus areas: Foundations of Computer Science, Software Development, Data Science and IT Security.",
+      "Scholarship recipient (Deutschlandstipendium).",
+    ],
   },
 ];

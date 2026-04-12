@@ -8,11 +8,9 @@ export const skillCategories: SkillCategory[] = [
     name: "AI & Machine Learning",
     skills: [
       "Large Language Models (LLM)",
-      "Agentic AI",
-      "Retrieval-Augmented Generation (RAG)",
-      "Machine Learning",
       "Model Context Protocol (MCP)",
-      "CrewAI",
+      "Retrieval-Augmented Generation (RAG)",
+      "Agentic AI",
     ],
   },
   {
@@ -20,9 +18,9 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       "Python",
       "Java",
-      "SQL",
-      "Node.js",
+      "SQLite",
       "React / Next.js",
+      "Bash",
       "Git",
     ],
   },
@@ -30,10 +28,10 @@ export const skillCategories: SkillCategory[] = [
     name: "Tools & Platforms",
     skills: [
       "Azure DevOps",
-      "GitHub Copilot",
       "VS Code",
-      "n8n",
       "GitHub",
+      "n8n",
+      "CrewAI",
     ],
   },
   {
@@ -44,6 +42,15 @@ export const skillCategories: SkillCategory[] = [
       "Algorithms & Data Structures",
       "Software Modeling",
       "UI/UX",
+    ],
+  },
+  {
+    name: "Further Qualifications",
+    skills: [
+      "Photography",
+      "Videography",
+      "Graphic Design",
+      "Driver's License (Class B)",
     ],
   },
 ];
