@@ -98,8 +98,8 @@ export function AboutSection() {
                 I&apos;m a Computer Science Master&apos;s student at Paderborn University with a
                 focus on Machine Learning and IT Security, currently working in Research & Pre-Development at dSPACE. My work sits at the
                 intersection of applied AI and software engineering — from building agentic
-                systems with CrewAI to complex automation with n8n and specialized LLM tooling.
-                I&apos;m drawn to problems where AI moves from prototype to something that
+                systems with CrewAI and MCP to complex automation with n8n and LLM evaluation
+                frameworks. I&apos;m drawn to problems where AI moves from prototype to something that
                 actually works in practice. In my free time, you&apos;ll often find me taking photos for
                 my Instagram, working out at the gym, or picking up my newest hobby: learning to play the guitar.
               </p>
