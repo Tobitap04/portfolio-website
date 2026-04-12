@@ -34,7 +34,12 @@ export const projects: Project[] = [
     id: "project-n8n-telegram",
     title: "n8n Personal AI Automation Hub",
     description:
-      "A Telegram-connected n8n workflow that powers a range of small, AI-driven automations I use daily: summarizing voice messages, converting images or handwritten notes into Anki flashcards, and turning a timetable photo into an ICS calendar file. All accessible directly from Telegram — no app switching needed.",
+      "A Telegram-connected n8n workflow that powers a range of small, AI-driven automations I use daily.",
+    longDescription: [
+      "A Telegram-connected n8n workflow that powers a range of small, AI-driven automations I use daily.",
+      "Key automations include: summarizing voice messages, converting images or handwritten notes into Anki flashcards, and turning a timetable photo into an ICS calendar file.",
+      "All accessible directly from Telegram — no app switching needed.",
+    ],
     tags: ["n8n", "Telegram", "AI", "Automation", "Workflows"],
     image: "/images/projects/ai-chatbot.jpg",
     status: "completed",
@@ -44,7 +49,12 @@ export const projects: Project[] = [
     id: "project-katharina-tappe",
     title: "Katharina Tappe – Lerntherapie",
     description:
-      "A professional website for my mum's learning therapy and tutoring practice. Built with Next.js and Tailwind CSS, it displays all courses and services she offers, synced directly with her Google Calendar so sessions are always up-to-date without a complex backend. Includes a multi-channel contact form optimized for easy booking across different platforms.",
+      "A professional website for my mum's learning therapy and tutoring practice.",
+    longDescription: [
+      "A professional website for my mum's learning therapy and tutoring practice, built with Next.js and Tailwind CSS.",
+      "It displays all courses and services she offers, synced directly with her Google Calendar so sessions are always up-to-date — without a complex backend.",
+      "Includes a multi-channel contact form optimized for easy booking across different platforms.",
+    ],
     tags: ["Next.js", "Tailwind CSS", "Google Calendar", "TypeScript"],
     image: "/images/projects/portfolio.jpg",
     liveUrl: "https://www.katharina-tappe.de",
@@ -55,7 +65,12 @@ export const projects: Project[] = [
     id: "project-robustcausaleval",
     title: "RobustCausalEval",
     description:
-      "An evaluation framework for analyzing how reliably LLMs answer causal questions under various perturbations (typos, biased phrasing, irrelevant context). Developed as part of my Bachelor's thesis at Paderborn University. Key finding: even semantics-preserving perturbations cause significant instability in model outputs. By combining input preprocessing, few-shot prompting, and output format constraints, robustness improved by up to 60% over baseline across all metrics.",
+      "An evaluation framework for analyzing how reliably LLMs answer causal questions under various perturbations.",
+    longDescription: [
+      "An evaluation framework for analyzing how reliably LLMs answer causal questions under various perturbations — including typos, biased phrasing, and irrelevant context.",
+      "Developed as part of my Bachelor's thesis at Paderborn University.",
+      "Key finding: even semantics-preserving perturbations cause significant instability in model outputs. By combining input preprocessing, few-shot prompting, and output format constraints, robustness improved by up to 60% over baseline across all metrics.",
+    ],
     tags: ["Python", "LLMs", "NLP", "Research", "Evaluation"],
     image: "/images/projects/portfolio.jpg",
     githubUrl: "https://github.com/Tobitap04/robust-causal-eval",

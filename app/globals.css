@@ -58,6 +58,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
+  background: var(--color-background);
 }
 
 body {
@@ -112,7 +113,7 @@ body::before {
     rgba(34, 211, 238, 0.015) 4px
   );
   pointer-events: none;
-  z-index: 9999;
+  z-index: 50;
   animation: pulse-glow 8s ease-in-out infinite;
 }
 

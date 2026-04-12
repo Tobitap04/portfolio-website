@@ -31,7 +31,7 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
   return (
     <AnimatePresence>
       {isOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 md:p-12">
+        <div className="fixed inset-0 z-[200] flex items-center justify-center px-4 pb-4 pt-24 sm:px-6 sm:pb-6 sm:pt-24 md:px-12 md:pb-12 md:pt-24">
           {/* Backdrop overlay */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -47,7 +47,7 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             transition={{ type: "spring", damping: 25, stiffness: 300, duration: 0.3 }}
-            className="relative w-full max-w-4xl max-h-[90vh] bg-surface-elevated border border-border rounded-2xl shadow-2xl flex flex-col overflow-hidden z-10"
+            className="relative w-full max-w-4xl max-h-[calc(100vh-8rem)] bg-surface-elevated border border-border rounded-2xl shadow-2xl flex flex-col overflow-hidden z-10"
           >
             {/* Header / Sticky Close Button */}
             <div className="absolute top-4 right-4 z-20">
@@ -63,7 +63,7 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
             {/* Scrollable Content */}
             <div className="overflow-y-auto w-full h-full flex-1">
               {/* Cover Image */}
-              <div className="relative w-full aspect-video md:aspect-[21/9] bg-surface">
+              <div className="relative w-full aspect-[16/9] md:aspect-[21/9] bg-surface max-h-56 md:max-h-64">
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -72,14 +72,14 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
                   sizes="(max-width: 1024px) 100vw, 1024px"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-surface-elevated via-surface-elevated/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-surface-elevated via-surface-elevated/20 to-transparent" />
               </div>
 
               {/* Content Body */}
-              <div className="p-6 md:p-10 space-y-8 -mt-16 relative z-10">
+              <div className="p-5 md:p-8 space-y-5 -mt-8 relative z-10">
                 {/* Title & Tags */}
                 <div>
-                  <h2 className="text-3xl md:text-5xl font-bold text-text-primary mb-6 drop-shadow-md">
+                  <h2 className="text-xl md:text-3xl font-bold text-text-primary mb-3 drop-shadow-md">
                     {project.title}
                   </h2>
                   <div className="flex flex-wrap gap-2">
@@ -122,17 +122,17 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
                   {project.longDescription ? (
                     Array.isArray(project.longDescription) ? (
                       project.longDescription.map((p, i) => (
-                        <p key={i} className="leading-relaxed mb-4 text-base md:text-lg">
+                        <p key={i} className="leading-relaxed mb-3 text-sm md:text-base">
                           {p}
                         </p>
                       ))
                     ) : (
-                      <p className="leading-relaxed whitespace-pre-line text-base md:text-lg">
+                      <p className="leading-relaxed whitespace-pre-line text-sm md:text-base">
                         {project.longDescription}
                       </p>
                     )
                   ) : (
-                    <p className="leading-relaxed text-base md:text-lg">
+                    <p className="leading-relaxed text-sm md:text-base">
                       {project.description}
                     </p>
                   )}

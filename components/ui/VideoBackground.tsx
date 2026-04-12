@@ -30,16 +30,7 @@ export function VideoBackground({ variant = "hero" }: VideoBackgroundProps) {
         }}
       />
 
-      {/* Top cyan accent glow for hero version */}
-      {variant === "hero" && (
-        <div
-          className="absolute top-0 left-0 right-0 h-[3px] z-20 opacity-50"
-          style={{
-            background:
-              "linear-gradient(90deg, transparent, rgba(34,211,238,0.5), transparent)",
-          }}
-        />
-      )}
+
     </div>
   );
 }

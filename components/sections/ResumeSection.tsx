@@ -54,9 +54,13 @@ export function ResumeSection() {
                       </span>
                     </div>
                     {entry.description && (
-                      <p className="text-sm text-text-muted mt-3">
-                        {entry.description}
-                      </p>
+                      <div className="text-sm text-text-muted mt-3 space-y-2">
+                        {Array.isArray(entry.description) ? (
+                          entry.description.map((p, i) => <p key={i}>{p}</p>)
+                        ) : (
+                          <p>{entry.description}</p>
+                        )}
+                      </div>
                     )}
                   </div>
                 ))}
@@ -97,9 +101,13 @@ export function ResumeSection() {
                       </span>
                     </div>
                     {entry.description && (
-                      <p className="text-sm text-text-muted mt-3">
-                        {entry.description}
-                      </p>
+                      <div className="text-sm text-text-muted mt-3 space-y-2">
+                        {Array.isArray(entry.description) ? (
+                          entry.description.map((p, i) => <p key={i}>{p}</p>)
+                        ) : (
+                          <p>{entry.description}</p>
+                        )}
+                      </div>
                     )}
                   </div>
                 ))}

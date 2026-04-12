@@ -16,20 +16,18 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
   return (
     <div
       onClick={onClick}
-      className={`group relative rounded-xl overflow-hidden border transition-[border-color,box-shadow,transform] duration-150 ${
-        isCompleted
+      className={`group relative rounded-xl overflow-hidden border transition-[border-color,box-shadow,transform] duration-150 ${isCompleted
           ? "border-border hover:border-white/10 hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-primary/5 hover:-translate-y-1 bg-surface cursor-pointer"
           : "border-border-subtle bg-surface/50 opacity-70"
-      }`}
+        }`}
     >
       {/* Image area */}
-      <div className="relative aspect-[4/3] overflow-hidden bg-surface-elevated">
+      <div className="relative aspect-video overflow-hidden bg-surface-elevated">
         <div
-          className={`absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-surface/90 z-10 ${
-            isCompleted
+          className={`absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-surface/90 z-10 ${isCompleted
               ? "group-hover:from-background/20 group-hover:via-background/40 group-hover:to-background/80"
               : ""
-          } transition-[background] duration-200`}
+            } transition-[background] duration-200`}
         />
 
         {/* Project image */}
@@ -37,11 +35,10 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
           src={project.image}
           alt={project.title}
           fill
-          className={`object-cover transition-[filter,transform] duration-200 ${
-            isCompleted
+          className={`object-cover transition-[filter,transform] duration-200 ${isCompleted
               ? "grayscale group-hover:grayscale-0 group-hover:scale-105"
               : "grayscale opacity-50"
-          }`}
+            }`}
           sizes="(max-width: 768px) 100vw, 50vw"
         />
 

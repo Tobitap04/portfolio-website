@@ -13,7 +13,7 @@ export function ProjectsSection() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   return (
-    <section id="projects" className="py-24 md:py-32">
+    <section id="projects" className="py-12 md:py-16">
       <div className="max-w-6xl mx-auto px-6">
         <SectionHeading
           badge="Featured Projects"
@@ -53,10 +53,10 @@ export function ProjectsSection() {
         </motion.div>
       </div>
 
-      <ProjectModal 
-        project={selectedProject} 
-        isOpen={selectedProject !== null} 
-        onClose={() => setSelectedProject(null)} 
+      <ProjectModal
+        project={selectedProject}
+        isOpen={selectedProject !== null}
+        onClose={() => setSelectedProject(null)}
       />
     </section>
   );
