@@ -46,7 +46,7 @@ export function AboutSection() {
                   src="/images/foto-tappe.webp"
                   alt="Tobias Tappe"
                   fill
-                  className="object-cover brightness-[0.9] contrast-[1.05]"
+                  className="object-cover brightness-[0.9] contrast-[1]"
                   sizes="(max-width: 768px) 100vw, 30vw"
                   priority
                 />
