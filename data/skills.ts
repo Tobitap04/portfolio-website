@@ -7,10 +7,12 @@ export const skillCategories: SkillCategory[] = [
   {
     name: "AI & Machine Learning",
     skills: [
-      "Large Language Models (LLM)",
-      "Model Context Protocol (MCP)",
-      "Retrieval-Augmented Generation (RAG)",
+      "LLM",
+      "MCP",
+      "RAG",
       "Agentic AI",
+      "Supervised Learning",
+      "Unsupervised Learning",
     ],
   },
   {
@@ -19,8 +21,8 @@ export const skillCategories: SkillCategory[] = [
       "Python",
       "Java",
       "SQLite",
-      "React / Next.js",
       "Bash",
+      "R / RStudio",
       "Git",
     ],
   },

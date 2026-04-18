@@ -23,19 +23,16 @@ export const projects: Project[] = [
     id: "project-remnote-skill",
     title: "RemNote Flashcard Skill",
     description:
-      "An AI skill that generates complete, opinionated flashcard sets from lecture notes and PDF slides — tailored exactly to my learning style and RemNote best practices.",
+      "A custom LLM skill that turns lecture slides and notes into ready-to-review RemNote flashcards — built around scientific flashcard best practices and RemNote's exact card syntax.",
     longDescription: [
-      "An AI skill that generates complete, opinionated flashcard sets from lecture notes and PDF slides — tailored exactly to my learning style and RemNote best practices.",
-      "It saves hours of manual card creation every week by producing high-quality, ready-to-review cards that are consistent in format and depth.",
-      "The automation pipeline parses complex structural data, converts concepts into highly atomic questions, and interfaces seamlessly with the RemNote ecosystem."
+      "A custom LLM skill that turns lecture slides and notes into ready-to-review RemNote flashcards — built around spaced repetition best practices and RemNote's exact card syntax.",
+      "Building it involved researching flashcard best practices extensively — minimum information principle, card atomicity, active recall — and baking those rules directly into the skill's instructions alongside RemNote's exact card syntax.",
+      "Created using the Copilot CLI and Claude's skill creator skill. Saves me hours of manual card creation each week and produces cards that are consistent in format, depth, and exam relevance."
     ],
-    tags: ["Python", "LLMs", "AI Agents", "Automation", "Education"],
-    image: "/images/projects/portfolio.jpg",
-    gallery: [
-      { url: "/images/projects/portfolio.jpg", caption: "Main dashboard mockup" },
-      { url: "/images/projects/ai-chatbot.jpg", caption: "AI processing flow" }
-    ],
+    tags: ["LLM", "Skill", "Copilot CLI"],
+    image: "/images/projects/remnote-skill.webp",
     githubUrl: "https://github.com/Tobitap04/skills",
+    linkText: "Check out the skill",
     status: "completed",
     featured: true,
   },
@@ -52,8 +49,8 @@ export const projects: Project[] = [
       "• Lecture PDF → Gemini extracts the key concepts into JSON, a Python script packages them into a ready-to-import Anki deck.",
       "No UI, no manual steps. One message and it's done."
     ],
-    tags: ["n8n", "Telegram", "Gemini API", "Raspberry Pi"],
-    image: "/images/projects/n8n-automation-preview.webp",
+    tags: ["n8n", "Gemini API", "Raspberry Pi"],
+    image: "/images/projects/n8n-workspace.webp",
     gallery: [
       {
         url: "/images/projects/n8n-start-message.webp",
@@ -72,24 +69,25 @@ export const projects: Project[] = [
         caption: "Anki flashcard generation."
       }
     ],
-    liveUrl: "https://t.me/TobitasTelegramBot",
-    linkText: "Check out the AutomatioBot for yourself",
+    liveUrl: "https://t.me/AwesomeAutomationBot",
+    linkText: "Try AutomatioBot yourself",
     status: "completed",
     featured: true,
   },
   {
     id: "project-katharina-tappe",
-    title: "Katharina Tappe – Lerntherapie",
+    title: "Coaching Practice Website",
     description:
-      "A professional website for my mum's learning therapy and tutoring practice.",
+      "A fast, modern website showcasing the services of a new coaching practice — designed using Google Stitch and implemented with Antigravity.",
     longDescription: [
-      "A professional website for my mum's learning therapy and tutoring practice, built with Next.js and Tailwind CSS.",
-      "It displays all courses and services she offers, synced directly with her Google Calendar so sessions are always up-to-date — without a complex backend.",
-      "Includes a multi-channel contact form optimized for easy booking across different platforms.",
+      "A new coaching practice offering learning support, resilience training, and creative workshops needed a clean, professional website to present its services and handle client inquiries.",
+      "I built the site using an AI-native workflow. Google Stitch handled the prototyping and UI layouts, while my Antigravity coding agent took care of the actual implementation—taking the project all the way to a live Vercel deployment.",
+      "The finished site features a parallax image gallery to give visitors a feel for the space, a live schedule synced directly with Google Calendar to keep upcoming workshops up to date without a complex backend, and a streamlined contact flow. Built with Next.js (App Router), TypeScript, and Tailwind CSS."
     ],
-    tags: ["Next.js", "Tailwind CSS", "Google Calendar", "TypeScript"],
-    image: "/images/projects/portfolio.jpg",
+    tags: ["Antigravity", "Stitch", "Vercel"],
+    image: "/images/projects/kts-website.webp",
     liveUrl: "https://www.katharina-tappe.de",
+    linkText: "Explore the website",
     status: "completed",
     featured: true,
   },
@@ -103,8 +101,8 @@ export const projects: Project[] = [
       "Developed as part of my Bachelor's thesis at Paderborn University.",
       "Key finding: even semantics-preserving perturbations cause significant instability in model outputs. By combining input preprocessing, few-shot prompting, and output format constraints, robustness improved by up to 60% over baseline across all metrics.",
     ],
-    tags: ["Python", "LLMs", "NLP", "Research", "Evaluation"],
-    image: "/images/projects/portfolio.jpg",
+    tags: ["Python", "LLM", "Research"],
+    image: "/images/projects/data-viz.jpg",
     githubUrl: "https://github.com/Tobitap04/robust-causal-eval",
     status: "completed",
     featured: true,

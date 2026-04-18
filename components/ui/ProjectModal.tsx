@@ -74,7 +74,7 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
                   sizes="(max-width: 1024px) 100vw, 896px"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-surface-elevated via-surface-elevated/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-surface-elevated from-[0%] via-surface-elevated/20 via-[30%] to-transparent to-[50%]" />
               </div>
 
               {/* Content Body */}
@@ -102,7 +102,7 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
                         className="flex items-center gap-2 text-sm font-medium text-text-primary hover:text-accent transition-colors"
                       >
                         <Code size={20} />
-                        View Source
+                        {project.linkText || "View Source"}
                       </a>
                     )}
                     {project.liveUrl && (

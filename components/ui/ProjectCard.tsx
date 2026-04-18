@@ -22,24 +22,31 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
         }`}
     >
       {/* Image area */}
-      <div className="relative aspect-video overflow-hidden bg-surface-elevated shrink-0">
-        <div
-          className={`absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-surface/90 z-10 ${isCompleted
-              ? "group-hover:from-background/20 group-hover:via-background/40 group-hover:to-background/80"
-              : ""
-            } transition-[background] duration-200`}
-        />
-
+      <div className="relative z-[60] aspect-video overflow-hidden bg-surface-elevated shrink-0">
+        
         {/* Project image */}
         <Image
           src={project.image}
           alt={project.title}
           fill
           className={`object-cover transition-[filter,transform] duration-200 ${isCompleted
-              ? "grayscale group-hover:grayscale-0 group-hover:scale-105"
+              ? "group-hover:scale-105"
               : "grayscale opacity-50"
             }`}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
+
+        {/* Local scan-line pattern over the image (so it gets faded by the gradient below) */}
+        <div 
+          className="absolute inset-0 pointer-events-none animate-[pulse-glow_8s_ease-in-out_infinite]"
+          style={{ backgroundImage: "repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(34, 211, 238, 0.015) 2px, rgba(34, 211, 238, 0.015) 4px)" }}
+        />
+
+        {/* Strong, short gradient limited to the bottom area */}
+        <div
+          className={`absolute inset-0 bg-gradient-to-t from-surface from-[0%] via-surface/20 via-[30%] to-transparent to-[50%] z-10 ${
+            isCompleted ? "group-hover:from-background group-hover:via-background/20" : ""
+          } transition-[background] duration-200 pointer-events-none`}
         />
 
         {/* Glassmorphic overlay button on hover */}
