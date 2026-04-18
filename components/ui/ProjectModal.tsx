@@ -74,7 +74,7 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
                   sizes="(max-width: 1024px) 100vw, 896px"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-surface-elevated from-[0%] via-surface-elevated/20 via-[30%] to-transparent to-[50%]" />
+                <div className="absolute inset-0 bg-gradient-to-t from-surface-elevated from-[0%] via-surface-elevated/20 via-[10%] to-transparent to-[25%]" />
               </div>
 
               {/* Content Body */}

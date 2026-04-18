@@ -44,7 +44,7 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
 
         {/* Strong, short gradient limited to the bottom area */}
         <div
-          className={`absolute inset-0 bg-gradient-to-t from-surface from-[0%] via-surface/20 via-[30%] to-transparent to-[50%] z-10 ${
+          className={`absolute inset-0 bg-gradient-to-t from-surface from-[0%] via-surface/20 via-[10%] to-transparent to-[25%] z-10 ${
             isCompleted ? "group-hover:from-background group-hover:via-background/20" : ""
           } transition-[background] duration-200 pointer-events-none`}
         />
