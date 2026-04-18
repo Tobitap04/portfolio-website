@@ -13,8 +13,8 @@ const aboutSkills = [
   "Python",
   "Machine Learning",
   "LLMs",
-  "Agentic AI",
-  "MCP",
+  "Software Development",
+  "Azure DevOps",
   "n8n",
   "IT Security",
 ];
