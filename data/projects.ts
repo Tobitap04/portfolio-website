@@ -50,7 +50,7 @@ export const projects: Project[] = [
       "No UI, no manual steps. One message and it's done."
     ],
     tags: ["n8n", "Gemini API", "Raspberry Pi"],
-    image: "/images/projects/n8n-workspace.webp",
+    image: "/images/projects/n8n-automation-preview.webp",
     gallery: [
       {
         url: "/images/projects/n8n-start-message.webp",
@@ -75,6 +75,22 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    id: "project-robustcausaleval",
+    title: "RobustCausalEval",
+    description:
+      "An evaluation framework for analyzing how reliably LLMs answer causal questions under various perturbations.",
+    longDescription: [
+      "An evaluation framework for analyzing how reliably LLMs answer causal questions under various perturbations — including typos, biased phrasing, and irrelevant context.",
+      "Developed as part of my Bachelor's thesis at Paderborn University.",
+      "Key finding: even semantics-preserving perturbations cause significant instability in model outputs. By combining input preprocessing, few-shot prompting, and output format constraints, robustness improved by up to 60% over baseline across all metrics.",
+    ],
+    tags: ["Python", "LLM", "Research"],
+    image: "/images/projects/data-viz.jpg",
+    githubUrl: "https://github.com/Tobitap04/robust-causal-eval",
+    status: "completed",
+    featured: true,
+  },
+  {
     id: "project-katharina-tappe",
     title: "Coaching Practice Website",
     description:
@@ -88,22 +104,6 @@ export const projects: Project[] = [
     image: "/images/projects/kts-website.webp",
     liveUrl: "https://www.katharina-tappe.de",
     linkText: "Explore the website",
-    status: "completed",
-    featured: true,
-  },
-  {
-    id: "project-robustcausaleval",
-    title: "RobustCausalEval",
-    description:
-      "An evaluation framework for analyzing how reliably LLMs answer causal questions under various perturbations.",
-    longDescription: [
-      "An evaluation framework for analyzing how reliably LLMs answer causal questions under various perturbations — including typos, biased phrasing, and irrelevant context.",
-      "Developed as part of my Bachelor's thesis at Paderborn University.",
-      "Key finding: even semantics-preserving perturbations cause significant instability in model outputs. By combining input preprocessing, few-shot prompting, and output format constraints, robustness improved by up to 60% over baseline across all metrics.",
-    ],
-    tags: ["Python", "LLM", "Research"],
-    image: "/images/projects/data-viz.jpg",
-    githubUrl: "https://github.com/Tobitap04/robust-causal-eval",
     status: "completed",
     featured: true,
   },
