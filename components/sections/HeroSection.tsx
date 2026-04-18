@@ -31,7 +31,7 @@ export function HeroSection() {
           transition={{ duration: 0.6, delay: 0.25 }}
         >
           CS Master&apos;s Student at Paderborn University · AI &amp; Software Dev at dSPACE ·
-          Building agentic systems, advanced automations &amp; researching cutting-edge technologies.
+          Building AI-powered software, automating complex workflows, and researching emerging technologies.
         </motion.p>
 
         <motion.div
