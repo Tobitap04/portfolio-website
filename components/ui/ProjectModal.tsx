@@ -5,7 +5,7 @@ import { X, ArrowUpRight, Code, ExternalLink } from "lucide-react";
 import Image from "next/image";
 import type { Project } from "@/data/projects";
 import { SkillTag } from "./SkillTag";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 interface ProjectModalProps {
   project: Project | null;
@@ -14,9 +14,11 @@ interface ProjectModalProps {
 }
 
 export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
-  // Prevent body scroll when modal is open
+  const [selectedGalleryImage, setSelectedGalleryImage] = useState<string | null>(null);
+
+  // Prevent body scroll when modal is open or lightbox is active
   useEffect(() => {
-    if (isOpen) {
+    if (isOpen || selectedGalleryImage) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "unset";
@@ -24,7 +26,7 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
     return () => {
       document.body.style.overflow = "unset";
     };
-  }, [isOpen]);
+  }, [isOpen, selectedGalleryImage]);
 
   if (!project) return null;
 
@@ -63,13 +65,13 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
             {/* Scrollable Content */}
             <div className="overflow-y-auto w-full h-full flex-1">
               {/* Cover Image */}
-              <div className="relative w-full aspect-[16/9] md:aspect-[21/9] bg-surface max-h-56 md:max-h-64">
+              <div className="relative w-full aspect-video bg-surface">
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
                   className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 1024px"
+                  sizes="(max-width: 1024px) 100vw, 896px"
                   priority
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-surface-elevated via-surface-elevated/20 to-transparent" />
@@ -111,7 +113,7 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
                         className="flex items-center gap-2 text-sm font-medium text-text-primary hover:text-accent transition-colors"
                       >
                         <ExternalLink size={20} />
-                        View live website
+                        {project.linkText || "View live website"}
                       </a>
                     )}
                   </div>
@@ -139,18 +141,31 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
                 </div>
 
                 {/* Additional Gallery Images */}
-                {project.images && project.images.length > 0 && (
+                {project.gallery && project.gallery.length > 0 && (
                   <div className="pt-8 space-y-6">
                     <h3 className="text-2xl font-semibold text-text-primary">Gallery & Screenshots</h3>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                      {project.images.map((img, i) => (
-                        <div key={i} className="relative aspect-video rounded-xl overflow-hidden border border-border bg-surface">
-                          <Image
-                            src={img}
-                            alt={`${project.title} screenshot ${i + 1}`}
-                            fill
-                            className="object-cover hover:scale-105 transition-transform duration-500 cursor-pointer"
-                          />
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                      {project.gallery.map((img, i) => (
+                        <div key={i} className="space-y-3">
+                          <button 
+                            onClick={() => setSelectedGalleryImage(img.url)}
+                            className="relative w-full rounded-xl overflow-hidden border border-border bg-surface shadow-lg group/img cursor-zoom-in"
+                          >
+                            <Image
+                              src={img.url}
+                              alt={img.caption || `${project.title} screenshot ${i + 1}`}
+                              width={800}
+                              height={1200}
+                              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                              className="w-full h-auto group-hover/img:scale-105 transition-transform duration-500"
+                            />
+                            <div className="absolute inset-0 bg-accent/0 group-hover/img:bg-accent/5 transition-colors duration-300" />
+                          </button>
+                          {img.caption && (
+                            <p className="text-sm text-text-secondary px-1 font-medium italic border-l-2 border-accent pl-3">
+                              {img.caption}
+                            </p>
+                          )}
                         </div>
                       ))}
                     </div>
@@ -159,6 +174,44 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
               </div>
             </div>
           </motion.div>
+
+          {/* Lightbox / Fullscreen Image Overlay */}
+          <AnimatePresence>
+            {selectedGalleryImage && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="fixed inset-0 z-[300] flex items-center justify-center p-4 md:p-12"
+              >
+                <div 
+                  className="absolute inset-0 bg-black/90 backdrop-blur-sm cursor-zoom-out" 
+                  onClick={() => setSelectedGalleryImage(null)} 
+                />
+                
+                <motion.div
+                  initial={{ scale: 0.9, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  exit={{ scale: 0.9, opacity: 0 }}
+                  className="relative max-w-5xl max-h-[90vh] z-10"
+                >
+                  <button
+                    onClick={() => setSelectedGalleryImage(null)}
+                    className="absolute -top-12 right-0 p-2 text-white/70 hover:text-white transition-colors"
+                  >
+                    <X size={28} />
+                  </button>
+                  <div className="relative w-full h-full rounded-lg overflow-hidden border border-white/10 shadow-2xl">
+                    <img 
+                      src={selectedGalleryImage} 
+                      alt="Enlarged view" 
+                      className="max-w-full max-h-[80vh] object-contain"
+                    />
+                  </div>
+                </motion.div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       )}
     </AnimatePresence>

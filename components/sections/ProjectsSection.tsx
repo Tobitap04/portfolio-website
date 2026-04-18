@@ -30,6 +30,7 @@ export function ProjectsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="h-full"
             >
               <ProjectCard project={project} onClick={() => setSelectedProject(project)} />
             </motion.div>
