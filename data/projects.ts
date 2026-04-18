@@ -97,7 +97,7 @@ export const projects: Project[] = [
       "A fast, modern website showcasing the services of a new coaching practice — designed using Google Stitch and implemented with Antigravity.",
     longDescription: [
       "A new coaching practice offering learning support, resilience training, and creative workshops needed a clean, professional website to present its services and handle client inquiries.",
-      "I built the site using an AI-native workflow. Google Stitch handled the prototyping and UI layouts, while my Antigravity coding agent took care of the actual implementation—taking the project all the way to a live Vercel deployment.",
+      "I built the site using an AI-native workflow. Google Stitch handled the prototyping and UI layouts, while my Antigravity coding agent took care of the actual implementation — taking the project all the way to a live Vercel deployment.",
       "The finished site features a parallax image gallery to give visitors a feel for the space, a live schedule synced directly with Google Calendar to keep upcoming workshops up to date without a complex backend, and a streamlined contact flow. Built with Next.js (App Router), TypeScript, and Tailwind CSS."
     ],
     tags: ["Antigravity", "Stitch", "Vercel"],
