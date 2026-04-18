@@ -25,7 +25,7 @@ export const projects: Project[] = [
     description:
       "A custom LLM skill that turns lecture slides and notes into ready-to-review RemNote flashcards — built around scientific flashcard best practices and RemNote's exact card syntax.",
     longDescription: [
-      "A custom LLM skill that turns lecture slides and notes into ready-to-review RemNote flashcards — built around spaced repetition best practices and RemNote's exact card syntax.",
+      "A custom LLM skill that turns lecture slides and notes into ready-to-review RemNote flashcards — built around scientific flashcard best practices and RemNote's exact card syntax.",
       "Building it involved researching flashcard best practices extensively — minimum information principle, card atomicity, active recall — and baking those rules directly into the skill's instructions alongside RemNote's exact card syntax.",
       "Created using the Copilot CLI and Claude's skill creator skill. Saves me hours of manual card creation each week and produces cards that are consistent in format, depth, and exam relevance."
     ],
