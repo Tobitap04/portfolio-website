@@ -37,6 +37,22 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    id: "project-robustcausaleval",
+    title: "RobustCausalEval",
+    description:
+      "An evaluation framework for analyzing how reliably LLMs answer causal questions under various perturbations.",
+    longDescription: [
+      "An evaluation framework for analyzing how reliably LLMs answer causal questions under various perturbations — including typos, biased phrasing, and irrelevant context.",
+      "Developed as part of my Bachelor's thesis at Paderborn University.",
+      "Key finding: even semantics-preserving perturbations cause significant instability in model outputs. By combining input preprocessing, few-shot prompting, and output format constraints, robustness improved by up to 60% over baseline across all metrics.",
+    ],
+    tags: ["Python", "LLM", "Research"],
+    image: "/images/projects/data-viz.jpg",
+    githubUrl: "https://github.com/Tobitap04/robust-causal-eval",
+    status: "completed",
+    featured: true,
+  },
+  {
     id: "project-n8n-telegram",
     title: "n8n AutomationBot",
     description:
@@ -71,22 +87,6 @@ export const projects: Project[] = [
     ],
     liveUrl: "https://t.me/AwesomeAutomationBot",
     linkText: "Try AutomatioBot yourself",
-    status: "completed",
-    featured: true,
-  },
-  {
-    id: "project-robustcausaleval",
-    title: "RobustCausalEval",
-    description:
-      "An evaluation framework for analyzing how reliably LLMs answer causal questions under various perturbations.",
-    longDescription: [
-      "An evaluation framework for analyzing how reliably LLMs answer causal questions under various perturbations — including typos, biased phrasing, and irrelevant context.",
-      "Developed as part of my Bachelor's thesis at Paderborn University.",
-      "Key finding: even semantics-preserving perturbations cause significant instability in model outputs. By combining input preprocessing, few-shot prompting, and output format constraints, robustness improved by up to 60% over baseline across all metrics.",
-    ],
-    tags: ["Python", "LLM", "Research"],
-    image: "/images/projects/data-viz.jpg",
-    githubUrl: "https://github.com/Tobitap04/robust-causal-eval",
     status: "completed",
     featured: true,
   },
