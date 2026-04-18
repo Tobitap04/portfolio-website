@@ -96,12 +96,12 @@ export function AboutSection() {
             <div className="bg-surface border border-border rounded-2xl p-5 flex-1 flex flex-col justify-center">
               <p className="text-text-secondary leading-relaxed">
                 I&apos;m a Computer Science Master&apos;s student at Paderborn University with a
-                focus on Machine Learning and IT Security, currently working in Research & Pre-Development at dSPACE. My work sits at the
-                intersection of applied AI and software engineering — from building agentic
-                systems with CrewAI and MCP to complex automation with n8n and LLM evaluation
-                frameworks. I&apos;m drawn to problems where AI moves from prototype to something that
-                actually works in practice. In my free time, you&apos;ll often find me taking photos for
-                my Instagram, working out at the gym, or picking up my newest hobby: learning to play the guitar.
+                focus on Machine Learning and IT Security, currently working in Research & Pre-Development at dSPACE.
+                My work sits at the intersection of applied AI and software engineering — from building agentic systems
+                with CrewAI and MCP to advanced automation with n8n and researching cutting-edge technologies. I&apos;m
+                drawn to problems where AI moves from prototype to something that actually works in practice.
+                In my free time, you&apos;ll often find me taking photos for my Instagram, working out at the gym, or
+                picking up my newest hobby: learning to play the guitar.
               </p>
 
               {/* Skill tags */}

@@ -41,7 +41,7 @@ export const projects: Project[] = [
       "All accessible directly from Telegram — no app switching needed.",
     ],
     tags: ["n8n", "Telegram", "AI", "Automation", "Workflows"],
-    image: "/images/projects/ai-chatbot.jpg",
+    image: "/images/projects/n8n-automation-preview.webp",
     status: "completed",
     featured: true,
   },

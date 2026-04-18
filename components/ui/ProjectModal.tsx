@@ -111,7 +111,7 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
                         className="flex items-center gap-2 text-sm font-medium text-text-primary hover:text-accent transition-colors"
                       >
                         <ExternalLink size={20} />
-                        Live Demo
+                        View live website
                       </a>
                     )}
                   </div>
