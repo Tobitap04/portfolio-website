@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/Button";
 const aboutSkills = [
   "Python",
   "Machine Learning",
-  "LLMs",
+  "LLM",
   "Software Development",
   "Azure DevOps",
   "n8n",
