@@ -58,7 +58,7 @@ export function AboutSection() {
                   Hello, I&apos;m <span className="text-gradient">Tobias Tappe</span>
                 </h3>
                 <p className="text-sm text-text-secondary mt-1">
-                  CS Master&apos;s Student &amp; AI Software Developer
+                  CS Master&apos;s Student &amp; Software Developer
                 </p>
               </div>
 
