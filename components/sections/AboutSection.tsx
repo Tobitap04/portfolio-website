@@ -97,7 +97,7 @@ export function AboutSection() {
               <p className="text-text-secondary leading-relaxed">
                 I&apos;m a Computer Science Master&apos;s student at Paderborn University with a
                 focus on Machine Learning and IT Security, currently working in Research & Pre-Development at dSPACE.
-                My work sits at the intersection of applied AI and software engineering — from building AI-powered software and agentic
+                My work sits at the intersection of applied AI and software development — from building AI-powered software and agentic
                 systems to automating complex workflows with n8n and researching emerging technologies.
                 I&apos;m most excited by exploring what AI makes possible that wasn't before.
                 In my free time, you&apos;ll often find me taking photos for my Instagram, working out at the gym, or
