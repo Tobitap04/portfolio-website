@@ -30,7 +30,7 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.25 }}
         >
-          CS Master&apos;s Student at Paderborn University · AI &amp; Software Dev at dSPACE ·
+          CS Master&apos;s Student at Paderborn University · Software Dev at dSPACE ·
           Building AI-powered software, automating complex workflows, and researching emerging technologies.
         </motion.p>
 
