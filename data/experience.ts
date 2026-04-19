@@ -15,9 +15,9 @@ export const experience: ExperienceEntry[] = [
     year: "Since Oct 2025",
     type: "work",
     description: [
-      "Developing AI-powered software and tooling for the automotive and aerospace industries in the Research & Pre-Development team.",
-      "Built a web-based prototype (Node.js/Python) for automated test case generation using multi-agent systems and specialized MCP integrations.",
-      "Researching emerging technologies and presenting prototype evaluations within an agile development environment.",
+      "Working in the Research & Pre-Development team for the aerospace and automotive industry.",
+      "Built a web-based prototype for automated test case generation using multi-agent systems and specialized MCP integrations.",
+      "Researching emerging technologies and presenting results to internal stakeholders.",
     ],
   },
   {
