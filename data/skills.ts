@@ -30,7 +30,6 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       "Azure DevOps",
       "VS Code",
-      "GitHub",
       "Git",
       "n8n",
       "CrewAI",
@@ -53,6 +52,7 @@ export const skillCategories: SkillCategory[] = [
       "Videography",
       "Graphic Design",
       "Driver's License (Class B)",
+      "LaTeX",
     ],
   },
 ];
