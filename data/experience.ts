@@ -24,7 +24,7 @@ export const experience: ExperienceEntry[] = [
     id: "edu-1",
     role: "M.Sc. Computer Science",
     company: "Paderborn University",
-    year: "Since Oct 2025",
+    year: "Since Apr 2026",
     type: "education",
     description: [
       "Current grade: 1.4 (≈ 3.6 GPA equivalent). ",
@@ -47,11 +47,12 @@ export const experience: ExperienceEntry[] = [
     id: "edu-2",
     role: "B.Sc. Computer Science",
     company: "Paderborn University",
-    year: "Oct 2022 – Oct 2025",
+    year: "Oct 2022 – Mar 2026",
     type: "education",
     description: [
       "Grade: 1.2 (≈ 3.8 GPA equivalent). ",
       "Focus areas: Foundations of Computer Science, Software Development, Data Science and IT Security.",
+      "Earned the UPB for Future certification in interdisciplinary sustainability.",
       "Scholarship recipient (Deutschlandstipendium).",
     ],
   },

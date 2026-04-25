@@ -16,14 +16,13 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    name: "Languages & Frameworks",
+    name: "Languages",
     skills: [
       "Python",
       "Java",
       "SQLite",
       "Bash",
       "R / RStudio",
-      "Git",
     ],
   },
   {
@@ -32,6 +31,7 @@ export const skillCategories: SkillCategory[] = [
       "Azure DevOps",
       "VS Code",
       "GitHub",
+      "Git",
       "n8n",
       "CrewAI",
     ],
